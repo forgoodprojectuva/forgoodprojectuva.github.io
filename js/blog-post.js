@@ -79,7 +79,7 @@ async function initBlogPost() {
         return;
     }
 
-    document.title = `FISH | ${post.title}`;
+    document.title = `${post.title} | FISH at UVA`;
     if (titleEl) titleEl.textContent = post.title;
     if (metaEl) metaEl.textContent = `${formatDate(post.date)} • ${post.author}`;
 

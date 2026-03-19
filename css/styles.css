@@ -1674,7 +1674,7 @@ strong{ font-weight: 800; }
 /* ONE image frame */
 .event-image{
     width: min(100%, 320px);
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 4 / 5;
     border-radius: 16px;
     background: rgba(127, 182, 204, 0.5);
     padding: 14px;
@@ -1783,6 +1783,10 @@ strong{ font-weight: 800; }
     color: rgba(8,52,78,0.86);
     line-height: 1.6;
     font-size: 22px;
+}
+
+.event-link {
+    text-decoration: underline;
 }
 
 

@@ -36,7 +36,7 @@ Copy this entire block and paste it as a new card inside `.events-grid`:
         <div class="event-front" data-event-front>
             <div class="event-image">
                 <div class="event-image__viewport">
-                    <img src="/assets/events/jaws-watch-party.png" alt="Jaws Watch Party poster" loading="lazy" />
+                    <img src="/assets/events/2026/jaws-watch-party.png" alt="Jaws Watch Party poster" loading="lazy" />
                 </div>
             </div>
 
@@ -58,9 +58,12 @@ Copy this entire block and paste it as a new card inside `.events-grid`:
                 Fall into the Halloween spirit with our JAWS watch party! Snacks provided.
             </p>
 
-            <p class="event-meta">October 28<br>6:30pm - 8:30pm<br>Olsson Hall<br>Room 120</p>
-
-
+            <p class="event-meta">
+                October 28<br>
+                6:30pm - 8:30pm<br>
+                Olsson Hall<br>
+                Room 120
+            </p>
         </div>
     </article>
 

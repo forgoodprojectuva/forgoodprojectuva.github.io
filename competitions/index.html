@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Competitions | FISH at UVA</title>
+    <meta
+            name="description"
+            content="See the healthcare innovation competitions FISH at UVA hopes to prepare for and submit to as projects continue to develop."
+    />
 
-    <!-- Root-relative paths so this works from /projects/, /about/, etc. -->
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="icon" type="image/png" href="/assets/brand/fish-main.png" />
-
 </head>
 
 <body>
@@ -31,11 +33,11 @@
 
         <nav id="primary-nav" class="site-nav" aria-label="Primary navigation">
             <a class="nav-link" href="/">Home</a>
-
             <a class="nav-link" href="/projects/">Projects</a>
+
             <div class="nav-dropdown">
                 <a class="nav-link" href="/make-a-thon/">Medical Device Make-A-Thon</a>
-                <div class="dropdown-panel" role="menu" aria-label="Projects submenu">
+                <div class="dropdown-panel" role="menu" aria-label="Medical Device Make-A-Thon submenu">
                     <a class="dropdown-link" href="/make-a-thon/sponsors/">Sponsors</a>
                     <a class="dropdown-link" href="/make-a-thon/students/">Students</a>
                 </div>
@@ -58,37 +60,55 @@
 
 <main class="page competitions-page">
 
-    <!-- HERO -->
     <section class="competitions-hero" aria-labelledby="comp-hero-title">
         <div class="container competitions-hero__inner">
-            <div class="competitions-hero__card">
-                <h1 id="comp-hero-title">Submitting our work!</h1>
+            <p class="competitions-eyebrow competitions-eyebrow--light">Competitions</p>
+            <h1 id="comp-hero-title" class="competitions-hero__title">Where Our Work Can Go</h1>
+            <p class="competitions-hero__sub">
+                As FISH projects develop through research, design, and testing, some may continue
+                into external competitions and conferences. These opportunities push teams to refine
+                their ideas, strengthen their presentations, and prepare work for a broader audience.
+            </p>
 
+            <div class="competitions-hero__actions">
+                <a class="competitions-btn-accent" href="#potential-competitions">View Opportunities</a>
+                <a class="competitions-btn-outline" href="/projects/">See Our Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="competitions-intro" id="potential-competitions" aria-labelledby="potential-title">
+        <div class="container competitions-intro__grid">
+            <div class="competitions-intro__copy">
+                <p class="competitions-eyebrow">Potential Competitions</p>
+                <h2 id="potential-title" class="competitions-section-title">Opportunities we hope to prepare for</h2>
                 <p>
-                    We end each year by submitting our Research and Development work into several healthcare innovation
-                    competitions and conferences. This requires extensive effort in preparing slide decks, financial figures,
-                    and a fully tested device.
+                    These are some of the competitions and design challenges we hope to submit to as
+                    our internal projects continue to grow. They represent opportunities for teams to
+                    share their work, receive feedback, and challenge themselves to build stronger,
+                    more polished solutions.
+                </p>
+                <p>
+                    Preparing for these submissions often means developing clear slide decks,
+                    documenting the design process, validating the problem and solution, and
+                    strengthening prototypes through testing and iteration.
+                </p>
+            </div>
+
+            <div class="competitions-intro__card">
+                <h3>Know of another opportunity?</h3>
+                <p>
+                    We are always interested in learning about additional competitions, conferences,
+                    and healthcare design opportunities that could be a strong fit for FISH teams.
+                    Reach out through the contact section below if there is something we should know about.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- POTENTIAL COMPETITIONS -->
-    <section class="competitions-list" aria-labelledby="potential-title">
+    <section class="competitions-list" aria-label="Competition cards">
         <div class="container competitions-list__inner">
-            <h2 id="potential-title">Potential Competitions</h2>
-
-            <div class="competitions-list__text">
-                <p>These are some of the competitions we aim to submit to!</p>
-                <p>We are excited for the opportunity to prepare for and apply to these.</p>
-                <p>
-                    If you know of any other competitions you would be interested in us applying to, please let us know in the
-                    contact section below.
-                </p>
-            </div>
-
             <div class="competitions-grid">
-                <!-- 1 -->
                 <article class="competition-card">
                     <img class="competition-card__logo"
                          src="/assets/competitions/JohnsHopkins.png"
@@ -110,7 +130,6 @@
                     </a>
                 </article>
 
-                <!-- 2 -->
                 <article class="competition-card">
                     <img class="competition-card__logo"
                          src="/assets/competitions/BMES-Logo_Text.png"
@@ -132,7 +151,6 @@
                     </a>
                 </article>
 
-                <!-- 3 -->
                 <article class="competition-card">
                     <img class="competition-card__logo"
                          src="/assets/competitions/resna-seal.png"
@@ -156,34 +174,34 @@
             </div>
         </div>
     </section>
+</main>
 
-    <!-- CONTACT (simple footer bar; no form) -->
-    <section class="contact-section" id="contact">
-        <div class="contact-strip">
-            <div class="contact-strip-left">
-                <p class="contact-line">
-                    <a class="contact-link" href="mailto:frugalinnovations@virginia.edu">frugalinnovations@virginia.edu</a>
-                </p>
-                <p class="contact-line">Charlottesville, VA, 22904</p>
-            </div>
-
-            <div class="contact-strip-right" aria-label="Social links">
-                <a class="social-icon"
-                   href="https://groupme.com/join_group/109354949/YaK5K88R"
-                   target="_blank" rel="noopener noreferrer"
-                   aria-label="Join our :contentReference[oaicite:0]{index=0}">
-                    <img src="/assets/icons/groupme-icon-1.png" alt="" />
-                </a>
-
-                <a class="social-icon"
-                   href="https://www.instagram.com/fish_atuva"
-                   target="_blank" rel="noopener noreferrer"
-                   aria-label="Visit our :contentReference[oaicite:1]{index=1}">
-                    <img src="/assets/icons/instagram-icon.png" alt="" />
-                </a>
-            </div>
+<section class="contact-section" id="contact">
+    <div class="contact-strip">
+        <div class="contact-strip-left">
+            <p class="contact-line">
+                <a class="contact-link" href="mailto:frugalinnovations@virginia.edu">frugalinnovations@virginia.edu</a>
+            </p>
+            <p class="contact-line">Charlottesville, VA, 22904</p>
         </div>
-    </section>
+
+        <div class="contact-strip-right" aria-label="Social links">
+            <a class="social-icon"
+               href="https://groupme.com/join_group/109354949/YaK5K88R"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Join our GroupMe">
+                <img src="/assets/icons/groupme-icon-1.png" alt="" />
+            </a>
+
+            <a class="social-icon"
+               href="https://www.instagram.com/fish_atuva"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Visit our Instagram">
+                <img src="/assets/icons/instagram-icon.png" alt="" />
+            </a>
+        </div>
+    </div>
+</section>
 
 <footer class="site-footer">
     <div class="container footer-inner">
@@ -200,6 +218,5 @@
 </script>
 
 <script src="/js/nav.js"></script>
-</main>
 </body>
 </html>

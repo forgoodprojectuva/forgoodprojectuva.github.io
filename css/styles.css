@@ -1902,7 +1902,7 @@ strong{ font-weight: 800; }
 /* ONE image frame */
 .event-image{
     width: min(100%, 320px);
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 8 / 9;
     border-radius: 16px;
     background: rgba(127, 182, 204, 0.5);
     padding: 14px;

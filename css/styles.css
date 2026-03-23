@@ -374,10 +374,6 @@ body.has-promo .promo-banner{
 
 /* Mobile */
 @media (max-width: 700px){
-    :root{
-        --promo-h: 96px;
-    }
-
     body.has-promo{
         --promo-h: 96px;
     }

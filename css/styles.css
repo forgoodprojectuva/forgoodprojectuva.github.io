@@ -419,6 +419,91 @@ body.has-promo .promo-banner{
     }
 }
 
+.promo-banner-inner{
+    min-height: var(--promo-min-h);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: calc(var(--promo-close-size) + 20px);
+}
+
+.promo-banner-nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.promo-banner-dots{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.promo-dot{
+    width: 9px;
+    height: 9px;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.45);
+    padding: 0;
+    cursor: pointer;
+    transition: transform 120ms ease, background 120ms ease, opacity 120ms ease;
+}
+
+.promo-dot.is-active{
+    background: #fff;
+    transform: scale(1.15);
+}
+
+.promo-dot:hover{
+    background: rgba(255,255,255,0.8);
+}
+
+.promo-banner-arrow{
+    width: 28px;
+    height: 28px;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.14);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 120ms ease, transform 120ms ease;
+}
+
+.promo-banner-arrow:hover{
+    background: rgba(255,255,255,0.22);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 900px){
+    .promo-banner-inner{
+        grid-template-columns: 1fr;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .promo-banner-nav{
+        order: 2;
+    }
+
+    .promo-banner-text{
+        order: 1;
+    }
+
+    .promo-banner-actions{
+        order: 3;
+    }
+}
+
 /* =========================================================
    Main Page
    ========================================================= */

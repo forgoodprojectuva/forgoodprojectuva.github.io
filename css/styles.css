@@ -254,7 +254,7 @@ strong{ font-weight: 800; }
 
 /* Adds space under fixed header only when banner exists */
 body.has-promo{
-    --promo-h: var(--promo-min-h);
+    --promo-h: 0px;
 }
 
 /* Banner shell */
@@ -380,32 +380,49 @@ body.has-promo .promo-banner{
 
 /* Mobile */
 @media (max-width: 700px){
-    body.has-promo{
-        --promo-h: 96px;
-    }
-
     .promo-banner-inner{
-        min-height: 96px;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: center;
-        gap: 8px;
+        min-height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "text"
+            "actions"
+            "nav";
+        align-items: start;
+        gap: 6px;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-right: calc(var(--promo-close-size) + 18px);
     }
 
     .promo-banner-text{
+        grid-area: text;
         padding-right: 8px;
     }
 
     .promo-banner-actions{
+        grid-area: actions;
+        display: flex;
+        justify-self: start;
+        justify-content: flex-start;
         gap: 8px;
+        flex-wrap: wrap;
+        max-width: 100%;
     }
 
     .promo-banner-link{
         font-size: 13px;
         padding: 7px 12px;
+        max-width: 100%;
+        white-space: nowrap;
+    }
+
+    .promo-banner-nav{
+        grid-area: nav;
+        display: flex;
+        align-items: center;
+        justify-self: start;
+        gap: 8px;
     }
 
     .promo-banner-close{
@@ -484,25 +501,19 @@ body.has-promo .promo-banner{
     transform: translateY(-1px);
 }
 
-@media (max-width: 900px){
+/*
+@media (max-width: 900px) and (min-width: 701px){
     .promo-banner-inner{
         grid-template-columns: 1fr;
         align-items: flex-start;
         gap: 8px;
     }
 
-    .promo-banner-nav{
-        order: 2;
-    }
-
-    .promo-banner-text{
-        order: 1;
-    }
-
-    .promo-banner-actions{
-        order: 3;
-    }
+    .promo-banner-nav{ order: 2; }
+    .promo-banner-text{ order: 1; }
+    .promo-banner-actions{ order: 3; }
 }
+*/
 
 /* =========================================================
    Main Page

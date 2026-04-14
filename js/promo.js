@@ -129,6 +129,7 @@
 
     closeBtn.addEventListener("click", () => {
         document.body.classList.remove("has-promo");
+        document.body.style.setProperty("--promo-h", "0px");
         stopAutoRotate();
     });
 
@@ -139,5 +140,21 @@
 
     renderAnnouncement();
     document.body.classList.add("has-promo");
+    requestAnimationFrame(syncPromoHeight);
     startAutoRotate();
+
+    window.addEventListener("resize", syncPromoHeight);
+    window.addEventListener("orientationchange", syncPromoHeight);
+
+    function syncPromoHeight() {
+        if (!banner) return;
+
+        if (!document.body.classList.contains("has-promo")) {
+            document.body.style.setProperty("--promo-h", "0px");
+            return;
+        }
+
+        const height = Math.ceil(banner.offsetHeight);
+        document.body.style.setProperty("--promo-h", `${height}px`);
+    }
 })();

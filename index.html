@@ -94,21 +94,23 @@
     </div>
 </header>
 
-<div class="promo-banner" id="promo-banner" aria-label="Announcement">
+<div class="promo-banner" id="promo-banner" aria-label="Announcements">
     <div class="container promo-banner-inner">
-        <p class="promo-banner-text">
-            Sign up for Dinner Series with Dr. Shannon Barker!
-        </p>
+        <div class="promo-banner-nav" aria-label="Announcement navigation">
+            <button class="promo-banner-arrow" id="promo-prev" type="button" aria-label="Previous announcement">
+                ‹
+            </button>
 
-        <div class="promo-banner-actions">
-            <a class="promo-banner-link" href="/events/#new-events">
-                Event Details
-            </a>
-            <a class="promo-banner-link"
-               href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=x4A0ewc3c0iLd-IWczplrJbVbQU68PFPvOilFwfzg5hURU1EV1BXUDdSU0VOVDZYQ1M0WjlNWU1YWi4u&utm_source=ig&utm_medium=social&utm_content=link_in_bio">
-                Apply
-            </a>
+            <div class="promo-banner-dots" id="promo-dots" aria-label="Select announcement"></div>
+
+            <button class="promo-banner-arrow" id="promo-next" type="button" aria-label="Next announcement">
+                ›
+            </button>
         </div>
+
+        <p class="promo-banner-text" id="promo-text"></p>
+
+        <div class="promo-banner-actions" id="promo-actions"></div>
     </div>
 
     <button
@@ -447,6 +449,7 @@
     </footer>
 
 <script src="js/nav.js"></script>
+    <script src="js/promo.js"></script>
 </main>
 </body>
 </html>

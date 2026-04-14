@@ -1,0 +1,143 @@
+// /js/promo.js
+(function () {
+    const banner = document.getElementById("promo-banner");
+    const textEl = document.getElementById("promo-text");
+    const actionsEl = document.getElementById("promo-actions");
+    const dotsEl = document.getElementById("promo-dots");
+    const prevBtn = document.getElementById("promo-prev");
+    const nextBtn = document.getElementById("promo-next");
+    const closeBtn = document.getElementById("promo-banner-close");
+
+    if (!banner || !textEl || !actionsEl || !dotsEl || !prevBtn || !nextBtn || !closeBtn) return;
+
+    const announcements = [
+        {
+            text: "Sign up for Dinner Series with Dr. Shannon Barker!",
+            links: [
+                { label: "Event Details", href: "/events/#new-events" },
+                {
+                    label: "Apply",
+                    href: "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=x4A0ewc3c0iLd-IWczplrJbVbQU68PFPvOilFwfzg5hURU1EV1BXUDdSU0VOVDZYQ1M0WjlNWU1YWi4u&utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+                }
+            ]
+        },
+        {
+            text: "Order a FISH sweatshirt or graduation cord before April 18th!",
+            links: [
+                { label: "Sweatshirt Form", href: "https://forms.gle/jRtoNDCHgABGQBR9A" },
+                { label: "Grad Cord Form", href: "https://forms.gle/sxRcnDu7NX1LynoD8" }
+            ]
+        },
+        {
+            text: "RSVP to FISH Showcase!",
+            links: [
+                { label: "More Details", href: "/events/#new-events" },
+                { label: "RSVP", href: "https://www.eventbrite.com/e/fish-showcase-tickets-1986843013939" }
+            ]
+        }
+    ];
+
+    if (!announcements.length) return;
+
+    let currentIndex = 0;
+    let intervalId = null;
+    const ROTATE_MS = 5000;
+
+    function renderDots() {
+        dotsEl.innerHTML = "";
+
+        announcements.forEach((announcement, index) => {
+            const dot = document.createElement("button");
+            dot.type = "button";
+            dot.className = "promo-dot";
+            dot.setAttribute("aria-label", `Go to announcement ${index + 1}`);
+            dot.setAttribute("aria-pressed", index === currentIndex ? "true" : "false");
+
+            if (index === currentIndex) {
+                dot.classList.add("is-active");
+            }
+
+            dot.addEventListener("click", () => {
+                currentIndex = index;
+                renderAnnouncement();
+                restartAutoRotate();
+            });
+
+            dotsEl.appendChild(dot);
+        });
+    }
+
+    function renderAnnouncement() {
+        const item = announcements[currentIndex];
+        if (!item) return;
+
+        textEl.textContent = item.text;
+        actionsEl.innerHTML = "";
+
+        (item.links || []).forEach((link) => {
+            const a = document.createElement("a");
+            a.className = "promo-banner-link";
+            a.href = link.href;
+            a.textContent = link.label;
+
+            if (/^https?:\/\//i.test(link.href)) {
+                a.target = "_blank";
+                a.rel = "noopener noreferrer";
+            }
+
+            actionsEl.appendChild(a);
+        });
+
+        renderDots();
+    }
+
+    function goToNext() {
+        currentIndex = (currentIndex + 1) % announcements.length;
+        renderAnnouncement();
+    }
+
+    function goToPrev() {
+        currentIndex = (currentIndex - 1 + announcements.length) % announcements.length;
+        renderAnnouncement();
+    }
+
+    function startAutoRotate() {
+        stopAutoRotate();
+        intervalId = window.setInterval(goToNext, ROTATE_MS);
+    }
+
+    function stopAutoRotate() {
+        if (intervalId) {
+            window.clearInterval(intervalId);
+            intervalId = null;
+        }
+    }
+
+    function restartAutoRotate() {
+        startAutoRotate();
+    }
+
+    prevBtn.addEventListener("click", () => {
+        goToPrev();
+        restartAutoRotate();
+    });
+
+    nextBtn.addEventListener("click", () => {
+        goToNext();
+        restartAutoRotate();
+    });
+
+    closeBtn.addEventListener("click", () => {
+        document.body.classList.remove("has-promo");
+        stopAutoRotate();
+    });
+
+    banner.addEventListener("mouseenter", stopAutoRotate);
+    banner.addEventListener("mouseleave", startAutoRotate);
+    banner.addEventListener("focusin", stopAutoRotate);
+    banner.addEventListener("focusout", startAutoRotate);
+
+    renderAnnouncement();
+    document.body.classList.add("has-promo");
+    startAutoRotate();
+})();

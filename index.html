@@ -20,16 +20,16 @@
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
-            --green:       #2d6a4f;
-            --green-mid:   #40916c;
-            --green-light: #74c69d;
-            --green-pale:  #d8f3dc;
-            --cream:       #faf9f6;
-            --warm-white:  #f5f0e8;
-            --charcoal:    #1c1c1c;
+            --green:       #1a1a1a;
+            --green-mid:   #333333;
+            --green-light: #f5c800;
+            --green-pale:  #fff8d6;
+            --cream:       #ffffff;
+            --warm-white:  #fafafa;
+            --charcoal:    #1a1a1a;
             --mid:         #4a4a4a;
             --muted:       #7a7a7a;
-            --accent:      #e76f51;
+            --accent:      #f5c800;
 
             --font-display: 'Playfair Display', Georgia, serif;
             --font-body:    'DM Sans', sans-serif;
@@ -64,7 +64,7 @@
             z-index: 100;
             background: rgba(250, 249, 246, 0.95);
             backdrop-filter: blur(8px);
-            border-bottom: 1px solid rgba(45, 106, 79, 0.12);
+            border-bottom: 1px solid rgba(245, 200, 0, 0.25);
         }
 
         .header-inner {
@@ -151,7 +151,7 @@
             position: absolute;
             top: -80px; right: -120px;
             width: 600px; height: 600px;
-            background: radial-gradient(circle, var(--green-pale) 0%, transparent 70%);
+            background: radial-gradient(circle, #fff8d6 0%, transparent 70%);
             border-radius: 50%;
             pointer-events: none;
         }
@@ -161,7 +161,7 @@
             position: absolute;
             bottom: -100px; left: -80px;
             width: 400px; height: 400px;
-            background: radial-gradient(circle, rgba(116, 198, 157, 0.18) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(245, 200, 0, 0.12) 0%, transparent 70%);
             border-radius: 50%;
             pointer-events: none;
         }
@@ -493,7 +493,7 @@
 
         .project-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(45,106,79,0.12);
+            box-shadow: 0 12px 40px rgba(245,200,0,0.18);
         }
 
         .project-card--featured {
@@ -928,6 +928,7 @@
 <header class="site-header">
     <div class="container header-inner">
         <a class="brand" href="/" aria-label="Home">
+            <img src="assets/brand/forgood-logo.png" alt="The For Good Project logo" style="height:48px; width:48px; object-fit:contain; border-radius:50%;" />
             <div class="brand-meta">
                 <div class="brand-name">The For Good Project</div>
                 <div class="brand-tagline">at the University of Virginia</div>

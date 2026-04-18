@@ -1,8 +1,8 @@
-# FISH Website (Frugal Innovations in Sustainable Healthcare @ UVA)
+# The For Good Project @ UVA
 
-This repository contains the public website for **Frugal Innovations in Sustainable Healthcare (FISH)** at the University of Virginia.
+This repository contains the public website for The For Good Project at the University of Virginia.
 
-**Live website:** https://frugal-innovations-at-uva.github.io
+**Live website:** https://forgoodprojectuva.github.io/
 
 If you’re new to coding: you’ll mostly be editing text in `.html` files, adjusting styling in `.css`, and adding images in `assets/`. You do *not* need to be an expert to help.
 

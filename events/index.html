@@ -3,684 +3,173 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Events | FISH at UVA</title>
-
-    <link rel="stylesheet" href="/css/styles.css?v=2" />
-    <link rel="icon" type="image/png" href="/assets/brand/fish-main.png" />
+    <title>Executive Board | For Good</title>
+    <meta
+        name="description"
+        content="Meet the student executive board leading For Good at UVA."
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" type="image/png" href="/assets/brand/logo.png" />
 </head>
 
 <body>
+
+<!-- ✅ UPDATED HEADER (your version) -->
 <header class="site-header">
     <div class="container header-inner">
-        <a class="brand" href="/" aria-label="Home">
-            <img class="brand-mark" src="/assets/brand/fish-main.png" alt="FISH logo" />
+        <a class="brand" href="/">
+            <img class="brand-mark" src="/assets/brand/logo.png" alt="For Good logo" />
             <div class="brand-meta brand-meta--inline">
-                <div class="brand-name">FISH</div>
+                <div class="brand-name">For Good</div>
                 <div class="brand-tagline brand-tagline--inline">
-                    Frugal Innovations In Sustainable Healthcare
+                    Building projects for social impact
                 </div>
             </div>
         </a>
 
-        <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
-            <span class="sr-only">Menu</span> ☰
-        </button>
-
-        <nav id="primary-nav" class="site-nav" aria-label="Primary navigation">
+        <nav class="site-nav">
             <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/about/">Mission</a>
             <a class="nav-link" href="/projects/">Projects</a>
-            <div class="nav-dropdown">
-                <a class="nav-link" href="/make-a-thon/">Medical Device Make-A-Thon</a>
-                <div class="dropdown-panel" role="menu" aria-label="Projects submenu">
-                    <a class="dropdown-link" href="/make-a-thon/sponsors/">Sponsors</a>
-                    <a class="dropdown-link" href="/make-a-thon/students/">Students</a>
-                </div>
-            </div>
             <a class="nav-link" href="/events/">Events</a>
-            <a class="nav-link" href="/competitions/">Competitions</a>
-            <a class="nav-link" href="/blog/">Blog</a>
-            <a class="nav-link" href="/donate/">Donate</a>
-            <div class="nav-dropdown nav-dropdown--right">
-                <a class="nav-link" href="/about/">About Us</a>
-                <div class="dropdown-panel" role="menu" aria-label="About Us submenu">
-                    <a class="dropdown-link" href="/about/officers/">Officers</a>
-                    <a class="dropdown-link" href="/about/collaborations/">Collaborations</a>
-                </div>
-            </div>
+            <a class="nav-link" href="/team/">Team</a>
         </nav>
     </div>
 </header>
 
-<main class="page">
-    <!-- HERO -->
-    <section class="events-hero">
-        <div class="container events-hero__inner">
-            <p class="events-eyebrow events-eyebrow--light">Events</p>
-            <h1 class="events-hero__title">Our learning philosophy…</h1>
-            <p class="events-hero__sub">
-                We strongly believe in sharing knowledge within our community. Through guest lectures,
-                workshops, and other events we help students learn about the intersections between medicine
-                and engineering. What’s more is we believe that each of you has something to teach us as well!
-                <b>With our support, you can plan your own workshops and events!</b>
+<main class="page about-officers-page">
+
+    <section class="about-officers-hero">
+        <div class="container about-officers-hero__inner">
+            <p class="about-officers-eyebrow about-officers-eyebrow--light">Executive Board</p>
+            <h1 class="about-officers-hero__title">The people behind the work</h1>
+            <p class="about-officers-hero__sub">
+                Meet the student leaders driving For Good’s mission in technology, design,
+                and social impact at UVA.
             </p>
 
-            <a class="events-hero__cta"
-               href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=x4A0ewc3c0iLd-IWczplrGIkJyvBcaZKqE6xLlggJBtUNEFMNFVQVzcyWU9HRU5ZQUJIOTNFVFo0USQlQCN0PWcu&route=shorturl"
-               target="_blank" rel="noopener noreferrer">
-                Start Planning Events Now!</a>
+            <div class="aboutpage-hero__actions">
+                <a class="aboutpage-involved__button aboutpage-involved__button--accent"
+                   href="mailto:forgoodproject@virginia.edu">
+                    Contact
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- EVENTS -->
-    <section class="events-section">
+    <section class="about-officers-intro">
+        <div class="container about-officers-intro__grid">
+
+            <div class="about-officers-intro__copy">
+                <p class="about-officers-eyebrow">Who We Are</p>
+                <h2 class="about-officers-intro-title">
+                    A student-led team building tech for good
+                </h2>
+                <p>
+                    The For Good executive board brings together students from engineering,
+                    computer science, public policy, and design to build impactful projects.
+                </p>
+                <p>
+                    Together, they guide development, manage operations, and grow the organization’s
+                    mission of using technology for social good.
+                </p>
+            </div>
+
+            <div class="about-officers-intro__card">
+                <h3>What the exec board leads</h3>
+                <p>
+                    Project development, outreach, partnerships, operations, marketing, and finance.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about-officers-team">
         <div class="container">
-            <h2 class="events-calendar__title">Calendar</h2>
 
-            <!-- Calendar embed (above event cards) -->
-            <div class="events-calendar" aria-label="FISH Events Calendar">
-                <iframe
-                        class="events-calendar__iframe"
-                        title="FISH Events Calendar"
-                        src="https://calendar.google.com/calendar/embed?src=290b3320470eac07e3b29e73b09220b7eae803a9dbe8e94c7bc6486452423de2%40group.calendar.google.com&ctz=America%2FNew_York"
-                        loading="lazy"
-                        frameborder="0"
-                        scrolling="no">
-                </iframe>
-            </div>
-            <h2 class="events-section__title">Upcoming Events</h2>
-            <div id="new-events" class="events-grid">
-                <!-- =========================================================
-                     ADD NEW EVENTS UNDER THIS COMMENT
-                     - data-slug MUST be unique (no renumbering)
-                     - Update: data-slug, image src/alt, title, meta, description
-                     ========================================================= -->
-
-                <article class="event-card" data-event data-slug="2026-barker-dinner-series">
-                    <div class="event-front" data-event-front>
-                        <div class="event-image">
-                            <div class="event-image__viewport">
-                                <img src="/assets/events/2026/barker-dinner-series.png" alt="Dinner Series with Dr. Shannon Barker" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <h3 class="event-title">Dinner Series with<br>Dr. Shannon Barker</h3>
-                        <p class="event-meta">April 17 | 6:30pm</p>
-                        <p class="event-meta">The Ridley</p>
-
-                        <button class="event-btn" type="button" data-event-open aria-expanded="false">
-                            More info
-                        </button>
-                    </div>
-
-                    <div class="event-details" data-event-details aria-hidden="true">
-                        <button class="event-close" type="button" data-event-close aria-label="Close">×</button>
-
-                        <h3 class="event-title">Dinner Series with<br>Dr. Shannon Barker</h3>
-
-                        <p class="event-desc">
-                            We’re so excited to invite you to our next Dinner Series with our faculty advisor, Dr. Shannon Barker, on 04/17/2026 at 6:30pm at The Ridley!
-                        </p>
-
-                        <p class="event-meta">
-                            April 17<br>
-                            6:30pm<br>
-                            The Ridley<br>
-                            <a class="event-link"
-                               href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=x4A0ewc3c0iLd-IWczplrJbVbQU68PFPvOilFwfzg5hURU1EV1BXUDdSU0VOVDZYQ1M0WjlNWU1YWi4u&utm_source=ig&utm_medium=social&utm_content=link_in_bio"
-                               target="_blank" rel="noopener noreferrer">Apply Here</a>
-                        </p>
-
-
-                    </div>
-                </article>
-
-                <article class="event-card" data-event data-slug="2026-merch-cords">
-                    <div class="event-front" data-event-front>
-                        <div class="event-image">
-                            <div class="event-image__viewport">
-                                <img src="/assets/events/2026/merch-cords.png" alt="Merch & Grad Cord Order Form" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <h3 class="event-title">Sweatshirt & Grad Cord<br>Order Forms</h3>
-                        <p class="event-meta">April 18 | 11:59pm</p>
-                        <p class="event-meta">
-                            <a class="event-link"
-                               href="https://forms.gle/jRtoNDCHgABGQBR9A"
-                               target="_blank" rel="noopener noreferrer">Sweatshirt Form</a> |
-                            <a class="event-link"
-                               href="https://forms.gle/sxRcnDu7NX1LynoD8"
-                               target="_blank" rel="noopener noreferrer">Grad Cord Form</a>
-                        </p>
-
-                        <button class="event-btn" type="button" data-event-open aria-expanded="false">
-                            More info
-                        </button>
-                    </div>
-
-                    <div class="event-details" data-event-details aria-hidden="true">
-                        <button class="event-close" type="button" data-event-close aria-label="Close">×</button>
-
-                        <h3 class="event-title">Sweatshirt & Grad Cord<br>Order Forms</h3>
-
-                        <p class="event-desc">
-                            Place your order for a FISH sweatshirt or graduation cord before the deadline.
-                            Use the links below to submit your order form and celebrate your involvement with FISH.
-                        </p>
-
-                        <p class="event-meta">
-                            April 18<br>
-                            11:59pm<br>
-                            <a class="event-link"
-                               href="https://forms.gle/jRtoNDCHgABGQBR9A"
-                               target="_blank" rel="noopener noreferrer">Sweatshirt Form</a><br>
-                            <a class="event-link"
-                               href="https://forms.gle/sxRcnDu7NX1LynoD8"
-                               target="_blank" rel="noopener noreferrer">Grad Cord Form</a>
-                        </p>
-
-
-                    </div>
-                </article>
-
-
-                <article class="event-card" data-event data-slug="2026-ceramics-keychain-collab">
-                    <div class="event-front" data-event-front>
-                        <div class="event-image">
-                            <div class="event-image__viewport">
-                                <img src="/assets/events/2026/ceramics-keychains.png" alt="Shrinky-Dink Keychains" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <h3 class="event-title">Shrinky-Dink<br>Keychains</h3>
-                        <p class="event-meta">April 19 | 3:00pm</p>
-                        <p class="event-meta">Ramazani Kitchen</p>
-
-                        <button class="event-btn" type="button" data-event-open aria-expanded="false">
-                            More info
-                        </button>
-                    </div>
-
-                    <div class="event-details" data-event-details aria-hidden="true">
-                        <button class="event-close" type="button" data-event-close aria-label="Close">×</button>
-
-                        <h3 class="event-title">Shrinky-Dink<br>Keychains</h3>
-
-                        <p class="event-desc">
-                            FISH x UVA Ceramics Club Collab. Come make your own shrinky-dink keychains with us!
-                        </p>
-
-                        <p class="event-meta">
-                            April 19<br>
-                            3:00pm - 5:00pm<br>
-                            Ramazani Kitchen<br>
-                        </p>
-
-
-                    </div>
-                </article>
-
-                <article class="event-card" data-event data-slug="2026-spring-showcase">
-                    <div class="event-front" data-event-front>
-                        <div class="event-image">
-                            <div class="event-image__viewport">
-                                <img src="/assets/events/2026/spring-showcase.png" alt="FISH Showcase" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <h3 class="event-title">FISH<br>Showcase</h3>
-                        <p class="event-meta">April 25 | 7:00pm</p>
-                        <p class="event-meta">1515 University Ave</p>
-
-                        <button class="event-btn" type="button" data-event-open aria-expanded="false">
-                            More info
-                        </button>
-                    </div>
-
-                    <div class="event-details" data-event-details aria-hidden="true">
-                        <button class="event-close" type="button" data-event-close aria-label="Close">×</button>
-
-                        <h3 class="event-title">FISH<br>Showcase</h3>
-
-                        <p class="event-desc">
-                            Come support your peers as they present the innovations they’ve developed throughout the semester.
-                            Please RSVP through the link in our bio to attend. Light bites and more will be provided.
-                            Members may bring one guest within the UVA community.
-                        </p>
-
-                        <p class="event-meta">
-                            April 25<br>
-                            7:00pm - 9:00pm<br>
-                            1515 University Ave<br>
-                            <a class="event-link"
-                               href="https://www.eventbrite.com/e/fish-showcase-tickets-1986843013939"
-                               target="_blank" rel="noopener noreferrer">RSVP Here</a>
-                        </p>
-
-
-                    </div>
-                </article>
-
+            <div class="about-officers-team__top">
+                <p class="about-officers-eyebrow">Meet the Team</p>
+                <h2 class="about-officers-section-title">Executive Board</h2>
             </div>
 
-            <!-- PAST EVENTS -->
-            <h2 class="events-section__title">Past Events</h2>
-            <div id="old-events" class="events-grid">
+            <div class="team-grid">
 
-                <article class="event-card" data-event data-slug="2026-chen-dinner-series">
-                    <div class="event-front" data-event-front>
-                        <div class="event-image">
-                            <div class="event-image__viewport">
-                                <img src="/assets/events/2026/chipotle-fundraiser.png" alt="Chipotle Fundraiser" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <h3 class="event-title">Chips & Chat</h3>
-                        <p class="event-meta">April 8 | 5:00pm</p>
-                        <p class="event-meta">1515 Backroom</p>
-
-                        <button class="event-btn" type="button" data-event-open aria-expanded="false">
-                            More info
-                        </button>
-                    </div>
-
-                    <div class="event-details" data-event-details aria-hidden="true">
-                        <button class="event-close" type="button" data-event-close aria-label="Close">×</button>
-
-                        <h3 class="event-title">Chips & Chat</h3>
-
-                        <p class="event-desc">
-                            Join Frugal Innovations in Sustainable Healthcare (FISH) in an entrepreneurship and networking Chips & Chat event.
-                            Simply buy a meal from Chipotle between 5pm and 9pm using our code (9MEP8BX) and stop by the 1515 Backroom for the event!
-                        </p>
-
-                        <p class="event-meta">
-                            April 8<br>
-                            5:00pm<br>
-                            Chipotle on the Corner<br>
-                            1515 Backroom
-                        </p>
-
-
+                <article class="team-card">
+                    <div class="team-card__body">
+                        <h3 class="team-card__name">SOPHIA POP-VICAS</h3>
+                        <p class="team-card__role">FOUNDER & PRESIDENT</p>
+                        <p class="team-card__meta">2nd Year · Government & Spanish</p>
+                        <p class="team-card__detail">bdm5ba@virginia.edu</p>
                     </div>
                 </article>
 
-                <article class="event-card" data-event data-slug="2026-chen-dinner-series">
-                    <div class="event-front" data-event-front>
-                        <div class="event-image">
-                            <div class="event-image__viewport">
-                                <img src="/assets/events/2026/chen-dinner-series.png" alt="Dinner Series with David Chen" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <h3 class="event-title">Dinner Series<br>with David Chen</h3>
-                        <p class="event-meta">March 25 | 6:30pm</p>
-                        <p class="event-meta">Mangosteen Asian Street Food</p>
-
-                        <button class="event-btn" type="button" data-event-open aria-expanded="false">
-                            More info
-                        </button>
-                    </div>
-
-                    <div class="event-details" data-event-details aria-hidden="true">
-                        <button class="event-close" type="button" data-event-close aria-label="Close">×</button>
-
-                        <h3 class="event-title">Dinner Series<br>with David Chen</h3>
-
-                        <p class="event-desc">
-                            Join us for the FISH Dinner Series with David Chen, UVA’s Assistant Dean for Innovation & Entrepreneurship.
-                            Connect in a small-group dinner setting to learn about biomedical engineering, career paths, and industry insights.
-                        </p>
-
-                        <p class="event-meta">
-                            March 25<br>
-                            6:30pm<br>
-                            Mangosteen Asian Street Food
-                        </p>
-
-
+                <article class="team-card">
+                    <div class="team-card__body">
+                        <h3 class="team-card__name">MACY BUSH</h3>
+                        <p class="team-card__role">CO-VP COMMUNITY OUTREACH</p>
+                        <p class="team-card__meta">2nd Year · Kinesiology</p>
+                        <p class="team-card__detail">uap6uk@virginia.edu</p>
                     </div>
                 </article>
 
-                <article class="event-card" data-event data-slug="2026-onshape-workshop">
-                    <div class="event-front" data-event-front>
-                        <div class="event-image">
-                            <div class="event-image__viewport">
-                                <img src="/assets/events/2026/onshape-workshop-poster.png" alt="OnShape" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <h3 class="event-title">OnShape Workshop</h3>
-                        <p class="event-meta">March 12 | 6:00pm</p>
-                        <p class="event-meta">Clark Hall | Room 101</p>
-
-                        <button class="event-btn" type="button" data-event-open aria-expanded="false">
-                            More info
-                        </button>
-                    </div>
-
-                    <div class="event-details" data-event-details aria-hidden="true">
-                        <button class="event-close" type="button" data-event-close aria-label="Close">×</button>
-
-                        <h3 class="event-title">OnShape Workshop</h3>
-
-                        <p class="event-desc">
-                            Hands-on intro to OnShape for rapid prototyping: sketches, constraints, extrudes,
-                            and exporting STLs for printing.
-                        </p>
-
-                        <p class="event-meta">
-                            March 12<br>
-                            6:00pm - 7:30pm<br>
-                            Clark Hall<br>
-                            Room 101
-                        </p>
-
+                <article class="team-card">
+                    <div class="team-card__body">
+                        <h3 class="team-card__name">ELLIOT WALTERS</h3>
+                        <p class="team-card__role">CO-VP COMMUNITY OUTREACH</p>
+                        <p class="team-card__meta">2nd Year · Batten School</p>
+                        <p class="team-card__detail">hhg8rb@virginia.edu</p>
                     </div>
                 </article>
 
-                <article class="event-card" data-event data-slug="2026-hot-chocolate-kripsy-kreme">
-                    <div class="event-front" data-event-front>
-                        <div class="event-image">
-                            <div class="event-image__viewport">
-                                <img src="/assets/events/2026/hot-chocolate-krispy-kreme.png" alt="Hot Chocolate & Krispy Kreme" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <h3 class="event-title">Hot Chocolate &<br>Krispy Kreme</h3>
-                        <p class="event-meta">February 25 | 12:30pm</p>
-                        <p class="event-meta">Wilsdorf Hall | 2nd Floor</p>
-
-                        <button class="event-btn" type="button" data-event-open aria-expanded="false">
-                            More info
-                        </button>
-                    </div>
-
-                    <div class="event-details" data-event-details aria-hidden="true">
-                        <button class="event-close" type="button" data-event-close aria-label="Close">×</button>
-
-                        <h3 class="event-title">Hot Chocolate &<br>Krispy Kreme</h3>
-
-                        <p class="event-desc">
-                            Join us for a Donuts & Hot Chocolate Social to celebrate Hot Chocolate Month. Come grab a cup, enjoy a treat, and hang out with us.
-                        </p>
-
-                        <p class="event-meta">
-                            February 25<br>
-                            12:30pm - 1:30pm<br>
-                            Wilsdorf Hall<br>
-                            2nd Floor
-                        </p>
-
+                <article class="team-card">
+                    <div class="team-card__body">
+                        <h3 class="team-card__name">BRENT PORTER</h3>
+                        <p class="team-card__role">VP FINANCE</p>
+                        <p class="team-card__meta">1st Year</p>
+                        <p class="team-card__detail">Email not listed</p>
                     </div>
                 </article>
 
-                <article class="event-card" data-event data-slug="2025-november-gbm">
-                    <div class="event-front" data-event-front>
-                        <div class="event-image">
-                            <div class="event-image__viewport">
-                                <img src="/assets/events/2025/november-gbm.png" alt="November GBM flyer" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <h3 class="event-title">November GBM</h3>
-                        <p class="event-meta">November 9 | 4:30pm</p>
-                        <p class="event-meta">Olsson Hall | Room 120</p>
-
-                        <button class="event-btn" type="button" data-event-open aria-expanded="false">
-                            More info
-                        </button>
-                    </div>
-
-                    <div class="event-details" data-event-details aria-hidden="true">
-                        <button class="event-close" type="button" data-event-close aria-label="Close">×</button>
-
-                        <h3 class="event-title">November GBM</h3>
-
-                        <p class="event-desc">
-                            Come watch presentations, vote on final healthcare innovation ideas, and help decide what we’ll be developing next semester! Business casual attire required.
-                        </p>
-
-                        <p class="event-meta">
-                            Novemebr 9<br>
-                            4:30pm - 6:30pm<br>
-                            Olsson Hall<br>
-                            Room 120
-                        </p>
-
+                <article class="team-card">
+                    <div class="team-card__body">
+                        <h3 class="team-card__name">ABBY LEE</h3>
+                        <p class="team-card__role">VP ADMINISTRATION</p>
+                        <p class="team-card__meta">2nd Year · Neuroscience & Dance</p>
+                        <p class="team-card__detail">fxx6wy@virginia.edu</p>
                     </div>
                 </article>
 
-                <article class="event-card" data-event data-slug="2025-jaws-watch-party">
-                    <!-- FRONT (defines the card height) -->
-                    <div class="event-front" data-event-front>
-                        <div class="event-image">
-                            <div class="event-image__viewport">
-                                <img src="/assets/events/2025/jaws-watch-party.png" alt="Jaws Watch Party poster" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <h3 class="event-title">Jaws Watch Party!</h3>
-                        <p class="event-meta">October 28 | 6:30pm</p>
-                        <p class="event-meta">Olsson Hall | Room 120</p>
-
-                        <button class="event-btn" type="button" data-event-open aria-expanded="false">
-                            More info
-                        </button>
-                    </div>
-
-                    <!-- DETAILS (overlays on top of the front; height stays the same) -->
-                    <div class="event-details" data-event-details aria-hidden="true">
-                        <button class="event-close" type="button" data-event-close aria-label="Close">×</button>
-
-                        <h3 class="event-title">Jaws Watch Party!</h3>
-
-                        <p class="event-desc">
-                            Fall into the Halloween spirit with our JAWS watch party! Snacks provided.
-                        </p>
-
-                        <p class="event-meta">
-                            October 28<br>
-                            6:30pm - 8:30pm<br>
-                            Olsson Hall<br>
-                            Room 120
-                        </p>
-
+                <article class="team-card">
+                    <div class="team-card__body">
+                        <h3 class="team-card__name">KAILEY ROSS</h3>
+                        <p class="team-card__role">CO-VP MARKETING</p>
+                        <p class="team-card__meta">2nd Year · Biology (Pre-Med)</p>
+                        <p class="team-card__detail">any2tk@virginia.edu</p>
                     </div>
                 </article>
 
-                <article class="event-card" data-event data-slug="2025-fall-bake-sale">
-                    <div class="event-front" data-event-front>
-                        <div class="event-image">
-                            <div class="event-image__viewport">
-                                <img src="/assets/events/2025/fall-bake-sale.png" alt="Fall Bake Sale flyer" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <h3 class="event-title">Fall Bake Sale!!</h3>
-                        <p class="event-meta">October 18 | 3:00pm</p>
-                        <p class="event-meta">Outside of Rice Hall</p>
-
-                        <button class="event-btn" type="button" data-event-open aria-expanded="false">
-                            More info
-                        </button>
-                    </div>
-
-                    <div class="event-details" data-event-details aria-hidden="true">
-                        <button class="event-close" type="button" data-event-close aria-label="Close">×</button>
-
-                        <h3 class="event-title">Fall Bake Sale!!</h3>
-
-                        <p class="event-desc">
-                            Help us raise funds to purchase equipment and tools during our development process.
-                            Come say hi and grab something sweet!
-                        </p>
-
-                        <p class="event-meta">
-                            October 18<br>
-                            3:00pm - 6:00pm<br>
-                            Outside of Rice Hall
-                        </p>
-
-                    </div>
-                </article>
-
-                <article class="event-card" data-event data-slug="2025-fall-research-meeting-1">
-                    <div class="event-front" data-event-front>
-                        <div class="event-image">
-                            <div class="event-image__viewport">
-                                <img src="/assets/events/2025/fall-research-meeting-1.png" alt="Research Meeting graphic" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <h3 class="event-title">Research Meeting 1</h3>
-                        <p class="event-meta">September 23 | 5:30pm</p>
-                        <p class="event-meta">Mechanical Engr Building | Room 205</p>
-
-                        <button class="event-btn" type="button" data-event-open aria-expanded="false">
-                            More info
-                        </button>
-                    </div>
-
-                    <div class="event-details" data-event-details aria-hidden="true">
-                        <button class="event-close" type="button" data-event-close aria-label="Close">×</button>
-
-                        <h3 class="event-title">Research Meeting 1</h3>
-
-                        <p class="event-desc">
-                            Intro meeting for current teams: goals for the semester, R&amp;D expectations,
-                            and what “on track” looks like for problem statement + constraints.
-                        </p>
-
-                        <p class="event-meta">
-                            September 23<br>
-                            5:30pm - 7:30pm<br>
-                            Mechanical Engineering Building<br>
-                            Room 205
-                        </p>
-
-                    </div>
-                </article>
-
-                <article class="event-card" data-event data-slug="2025-fusion-workshop">
-                    <div class="event-front" data-event-front>
-                        <div class="event-image">
-                            <div class="event-image__viewport">
-                                <img src="/assets/events/2025/fusion-workshop.png" alt="Fusion Workshop graphic" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <h3 class="event-title">Fusion Workshop</h3>
-                        <p class="event-meta">September 22 | 4:00pm</p>
-                        <p class="event-meta">Student Health & Well | Room 208</p>
-
-                        <button class="event-btn" type="button" data-event-open aria-expanded="false">
-                            More info
-                        </button>
-                    </div>
-
-                    <div class="event-details" data-event-details aria-hidden="true">
-                        <button class="event-close" type="button" data-event-close aria-label="Close">×</button>
-
-                        <h3 class="event-title">Fusion Workshop</h3>
-
-                        <p class="event-desc">
-                            Hands-on intro to Fusion 360 for rapid prototyping: sketches, constraints, extrudes,
-                            and exporting STLs for printing.
-                        </p>
-
-                        <p class="event-meta">
-                            September 22<br>
-                            4:00pm - 5:00pm<br>
-                            Student Health & Wellness<br>
-                            Room 208
-                        </p>
-
-                    </div>
-                </article>
-
-                <article class="event-card" data-event data-slug="2025-september-gbm">
-                    <div class="event-front" data-event-front>
-                        <div class="event-image">
-                            <div class="event-image__viewport">
-                                <img src="/assets/events/2025/september-gbm.png" alt="September GBM flyer" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <h3 class="event-title">September GBM</h3>
-                        <p class="event-meta">September 16 | 7:30pm</p>
-                        <p class="event-meta">New Cabell Hall | Room 168</p>
-
-                        <button class="event-btn" type="button" data-event-open aria-expanded="false">
-                            More info
-                        </button>
-                    </div>
-
-                    <div class="event-details" data-event-details aria-hidden="true">
-                        <button class="event-close" type="button" data-event-close aria-label="Close">×</button>
-
-                        <h3 class="event-title">September GBM</h3>
-
-                        <p class="event-desc">
-                            First GBM of the semester: meet the teams, learn how we work, and how to get involved.
-                        </p>
-
-                        <p class="event-meta">
-                            September 22<br>
-                            7:30pm - 8:30pm<br>
-                            Old Cabell Hall<br>
-                            Room 168
-                        </p>
-
+                <article class="team-card">
+                    <div class="team-card__body">
+                        <h3 class="team-card__name">AVA HIGGINS</h3>
+                        <p class="team-card__role">CO-VP MARKETING</p>
+                        <p class="team-card__meta">2nd Year · Media Studies & Spanish</p>
+                        <p class="team-card__detail">ebzus@virginia.edu</p>
                     </div>
                 </article>
 
             </div>
         </div>
     </section>
+
 </main>
-
-<!-- CONTACT -->
-<section class="contact-section" id="contact">
-    <div class="contact-strip">
-        <div class="contact-strip-left">
-            <p class="contact-line">
-                <a class="contact-link" href="mailto:frugalinnovations@virginia.edu">frugalinnovations@virginia.edu</a>
-            </p>
-            <p class="contact-line">Charlottesville, VA, 22904</p>
-        </div>
-
-        <div class="contact-strip-right" aria-label="Social links">
-            <a class="social-icon"
-               href="https://lists.virginia.edu/sympa/subscribe/fish25-26?previous_action=info"
-               target="_blank" rel="noopener noreferrer"
-               aria-label="Join our ListServ">
-                <img src="/assets/icons/listserv.png" alt="" />
-            </a>
-
-            <a class="social-icon"
-               href="https://groupme.com/join_group/109354949/YaK5K88R"
-               target="_blank" rel="noopener noreferrer"
-               aria-label="Join our GroupMe">
-                <img src="/assets/icons/groupme-icon-1.png" alt="" />
-            </a>
-
-            <a class="social-icon"
-               href="https://www.instagram.com/fish_atuva"
-               target="_blank" rel="noopener noreferrer"
-               aria-label="Visit our Instagram">
-                <img src="/assets/icons/instagram-icon.png" alt="" />
-            </a>
-        </div>
-    </div>
-</section>
 
 <footer class="site-footer">
     <div class="container footer-inner">
-        <span class="footer-copy">© <span id="year"></span> FISH</span>
-
+        <span class="footer-copy">© <span id="year"></span> For Good</span>
         <p class="footer-disclaimer">
-            Although this organization has members who are University of Virginia students and may have University employees associated or engaged in its activities and affairs, the organization is not a part of or an agency of the University. It is a separate and independent organization, which is responsible for and manages its own activities and affairs. The University does not direct, supervise or control the organization and is not responsible for the organization’s contracts, acts or omissions.
+            For Good is a student-led organization at the University of Virginia.
+            It is independent of the University and operates under its own governance.
         </p>
     </div>
 </footer>
@@ -689,7 +178,7 @@
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
-<script src="/js/events.js"></script>
 <script src="/js/nav.js"></script>
+
 </body>
 </html>

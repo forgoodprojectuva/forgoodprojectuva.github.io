@@ -3,923 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>The For Good Project at UVA | Community Service at the University of Virginia</title>
+    <title>The For Good Project at UVA | Community Service at UVA</title>
+
     <meta name="description"
-          content="The For Good Project at UVA is a student-led organization dedicated to driving positive change in the Charlottesville community through hands-on service, youth education, and community partnerships." />
+          content="The For Good Project at UVA is a student-led organization driving positive change in Charlottesville through service, education, and partnerships." />
+
     <link rel="canonical" href="https://forgoodprojectuva.github.io/" />
-    <meta property="og:site_name" content="The For Good Project at UVA" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/styles.css" />
-
-    <style>
-        /* ── RESET & BASE ── */
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-        :root {
-            --green:       #1a1a1a;
-            --green-mid:   #333333;
-            --green-light: #f5c800;
-            --green-pale:  #fff8d6;
-            --cream:       #ffffff;
-            --warm-white:  #fafafa;
-            --charcoal:    #1a1a1a;
-            --mid:         #4a4a4a;
-            --muted:       #7a7a7a;
-            --accent:      #f5c800;
-
-            --font-display: 'Playfair Display', Georgia, serif;
-            --font-body:    'DM Sans', sans-serif;
-
-            --radius: 12px;
-            --container: 1140px;
-        }
-
-        html { scroll-behavior: smooth; }
-
-        body {
-            font-family: var(--font-body);
-            background: var(--cream);
-            color: var(--charcoal);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: var(--container);
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        img { display: block; max-width: 100%; }
-        a { color: inherit; text-decoration: none; }
-
-        /* ── HEADER ── */
-        .site-header {
-            position: fixed;
-            top: 0; left: 0; right: 0;
-            z-index: 100;
-            background: rgba(250, 249, 246, 0.95);
-            backdrop-filter: blur(8px);
-            border-bottom: 1px solid rgba(245, 200, 0, 0.25);
-        }
-
-        .header-inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 68px;
-        }
-
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            text-decoration: none;
-        }
-
-        .brand-name {
-            font-family: var(--font-display);
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--green);
-            line-height: 1.2;
-        }
-
-        .brand-tagline {
-            font-size: 0.7rem;
-            color: var(--muted);
-            letter-spacing: 0.04em;
-        }
-
-        .site-nav {
-            display: flex;
-            align-items: center;
-            gap: 0.25rem;
-        }
-
-        .nav-link {
-            font-size: 0.875rem;
-            font-weight: 500;
-            color: var(--mid);
-            padding: 0.5rem 0.875rem;
-            border-radius: 6px;
-            transition: background 0.2s, color 0.2s;
-        }
-
-        .nav-link:hover {
-            background: var(--green-pale);
-            color: var(--green);
-        }
-
-        .nav-link--cta {
-            background: var(--green);
-            color: #fff !important;
-            padding: 0.5rem 1.25rem;
-        }
-
-        .nav-link--cta:hover {
-            background: var(--green-mid) !important;
-        }
-
-        .nav-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--charcoal);
-        }
-
-        /* ── HERO ── */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding: 120px 0 80px;
-            background: var(--cream);
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* decorative blobs */
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -80px; right: -120px;
-            width: 600px; height: 600px;
-            background: radial-gradient(circle, #fff8d6 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -100px; left: -80px;
-            width: 400px; height: 400px;
-            background: radial-gradient(circle, rgba(245, 200, 0, 0.12) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-
-        .hero__inner {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .hero__eyebrow {
-            display: inline-block;
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--green-mid);
-            background: var(--green-pale);
-            padding: 0.35rem 0.9rem;
-            border-radius: 100px;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero__title {
-            font-family: var(--font-display);
-            font-size: clamp(2.8rem, 5vw, 4.2rem);
-            font-weight: 900;
-            line-height: 1.08;
-            color: var(--charcoal);
-            margin-bottom: 1.5rem;
-        }
-
-        .hero__title .accent {
-            color: var(--green);
-        }
-
-        .hero__title .accent-warm {
-            color: var(--accent);
-        }
-
-        .hero__subtitle {
-            font-size: 1.05rem;
-            color: var(--mid);
-            line-height: 1.7;
-            max-width: 480px;
-            margin-bottom: 2.5rem;
-        }
-
-        .hero__actions {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.875rem 2rem;
-            border-radius: 8px;
-            font-family: var(--font-body);
-            font-size: 0.9rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-            border: none;
-        }
-
-        .btn:hover { transform: translateY(-2px); }
-
-        .btn--primary {
-            background: var(--green);
-            color: #fff;
-            box-shadow: 0 4px 20px rgba(45, 106, 79, 0.35);
-        }
-
-        .btn--primary:hover {
-            box-shadow: 0 6px 28px rgba(45, 106, 79, 0.45);
-        }
-
-        .btn--outline {
-            background: transparent;
-            color: var(--green);
-            border: 2px solid var(--green);
-        }
-
-        .btn--outline:hover {
-            background: var(--green-pale);
-        }
-
-        /* hero visual – decorative card stack */
-        .hero__visual {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero-card {
-            background: #fff;
-            border-radius: var(--radius);
-            padding: 2rem;
-            box-shadow: 0 8px 40px rgba(0,0,0,0.08);
-            border: 1px solid rgba(45,106,79,0.08);
-        }
-
-        .hero-card--main {
-            width: 340px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-card--back {
-            width: 300px;
-            position: absolute;
-            top: 30px; right: -20px;
-            z-index: 1;
-            background: var(--green-pale);
-            transform: rotate(4deg);
-        }
-
-        .hero-stat {
-            display: flex;
-            flex-direction: column;
-            gap: 0.25rem;
-            margin-bottom: 1.25rem;
-        }
-
-        .hero-stat:last-child { margin-bottom: 0; }
-
-        .hero-stat__num {
-            font-family: var(--font-display);
-            font-size: 2.2rem;
-            font-weight: 900;
-            color: var(--green);
-            line-height: 1;
-        }
-
-        .hero-stat__label {
-            font-size: 0.8rem;
-            color: var(--muted);
-            font-weight: 500;
-        }
-
-        .hero-divider {
-            height: 1px;
-            background: var(--green-pale);
-            margin: 1rem 0;
-        }
-
-        .hero-tag {
-            display: inline-block;
-            font-size: 0.72rem;
-            font-weight: 600;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color: var(--green-mid);
-            margin-bottom: 1rem;
-        }
-
-        /* ── SECTION SHARED ── */
-        section { padding: 96px 0; }
-
-        .section-eyebrow {
-            font-size: 0.72rem;
-            font-weight: 600;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--green-mid);
-            margin-bottom: 0.75rem;
-        }
-
-        .section-title {
-            font-family: var(--font-display);
-            font-size: clamp(1.8rem, 3vw, 2.6rem);
-            font-weight: 700;
-            line-height: 1.15;
-            color: var(--charcoal);
-            margin-bottom: 1.25rem;
-        }
-
-        .section-body {
-            font-size: 1rem;
-            color: var(--mid);
-            line-height: 1.75;
-            max-width: 600px;
-        }
-
-        /* ── MISSION ── */
-        .mission {
-            background: #fff;
-        }
-
-        .mission__inner {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 5rem;
-            align-items: start;
-        }
-
-        .mission__quote {
-            font-family: var(--font-display);
-            font-size: 1.35rem;
-            font-style: italic;
-            color: var(--green);
-            line-height: 1.55;
-            border-left: 4px solid var(--green-light);
-            padding-left: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .mission__goals {
-            display: flex;
-            flex-direction: column;
-            gap: 1.25rem;
-            margin-top: 1rem;
-        }
-
-        .goal-item {
-            display: flex;
-            gap: 1rem;
-            align-items: flex-start;
-        }
-
-        .goal-item__icon {
-            flex-shrink: 0;
-            width: 40px; height: 40px;
-            background: var(--green-pale);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-        }
-
-        .goal-item__title {
-            font-weight: 600;
-            color: var(--charcoal);
-            margin-bottom: 0.2rem;
-            font-size: 0.95rem;
-        }
-
-        .goal-item__text {
-            font-size: 0.875rem;
-            color: var(--muted);
-            line-height: 1.6;
-        }
-
-        /* ── PILLARS ── */
-        .pillars {
-            background: var(--green);
-            color: #fff;
-        }
-
-        .pillars .section-eyebrow { color: var(--green-light); }
-        .pillars .section-title { color: #fff; }
-
-        .pillars__grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .pillar-card {
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.15);
-            border-radius: var(--radius);
-            padding: 2rem;
-            transition: background 0.25s;
-        }
-
-        .pillar-card:hover {
-            background: rgba(255,255,255,0.14);
-        }
-
-        .pillar-card__num {
-            font-family: var(--font-display);
-            font-size: 2.5rem;
-            font-weight: 900;
-            color: var(--green-light);
-            opacity: 0.6;
-            line-height: 1;
-            margin-bottom: 0.75rem;
-        }
-
-        .pillar-card__title {
-            font-family: var(--font-display);
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: #fff;
-            margin-bottom: 0.75rem;
-        }
-
-        .pillar-card__text {
-            font-size: 0.9rem;
-            color: rgba(255,255,255,0.75);
-            line-height: 1.65;
-        }
-
-        /* ── PROJECTS ── */
-        .projects {
-            background: var(--warm-white);
-        }
-
-        .projects__header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            margin-bottom: 3rem;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .projects__grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-        }
-
-        .project-card {
-            background: #fff;
-            border-radius: var(--radius);
-            padding: 2rem;
-            border: 1px solid rgba(45,106,79,0.08);
-            transition: transform 0.25s, box-shadow 0.25s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(245,200,0,0.18);
-        }
-
-        .project-card--featured {
-            grid-column: span 2;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            background: var(--green);
-            color: #fff;
-            border: none;
-        }
-
-        .project-card--featured .project-card__eyebrow {
-            color: var(--green-light);
-        }
-
-        .project-card--featured .project-card__title {
-            color: #fff;
-        }
-
-        .project-card--featured .project-card__text {
-            color: rgba(255,255,255,0.8);
-        }
-
-        .project-card--featured .project-card__stat {
-            border-color: rgba(255,255,255,0.2);
-            color: #fff;
-        }
-
-        .project-card__eyebrow {
-            font-size: 0.7rem;
-            font-weight: 600;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--green-mid);
-            margin-bottom: 0.75rem;
-        }
-
-        .project-card__title {
-            font-family: var(--font-display);
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--charcoal);
-            margin-bottom: 0.75rem;
-            line-height: 1.3;
-        }
-
-        .project-card__text {
-            font-size: 0.875rem;
-            color: var(--mid);
-            line-height: 1.7;
-        }
-
-        .project-card__stats {
-            display: flex;
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--green-pale);
-        }
-
-        .project-card__stat {
-            display: flex;
-            flex-direction: column;
-            gap: 0.15rem;
-            border-left: 3px solid var(--green-light);
-            padding-left: 0.75rem;
-        }
-
-        .project-card__stat strong {
-            font-family: var(--font-display);
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--green);
-        }
-
-        .project-card--featured .project-card__stat strong {
-            color: var(--green-light);
-        }
-
-        .project-card__stat span {
-            font-size: 0.72rem;
-            color: var(--muted);
-            font-weight: 500;
-        }
-
-        /* ── EVENTS ── */
-        .events {
-            background: #fff;
-        }
-
-        .events__grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            margin-top: 3rem;
-            align-items: start;
-        }
-
-        .events__list {
-            display: flex;
-            flex-direction: column;
-            gap: 0;
-        }
-
-        .event-item {
-            display: grid;
-            grid-template-columns: 64px 1fr;
-            gap: 1rem;
-            padding: 1.25rem 0;
-            border-bottom: 1px solid rgba(45,106,79,0.1);
-            align-items: center;
-        }
-
-        .event-item:last-child { border-bottom: none; }
-
-        .event-date {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: var(--green-pale);
-            border-radius: 10px;
-            padding: 0.5rem;
-            text-align: center;
-        }
-
-        .event-date__month {
-            font-size: 0.65rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--green-mid);
-        }
-
-        .event-date__day {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: var(--green);
-            line-height: 1;
-        }
-
-        .event-info__title {
-            font-weight: 600;
-            color: var(--charcoal);
-            font-size: 0.9rem;
-            margin-bottom: 0.2rem;
-        }
-
-        .event-info__time {
-            font-size: 0.78rem;
-            color: var(--muted);
-        }
-
-        .events__note {
-            background: var(--green-pale);
-            border-radius: var(--radius);
-            padding: 2rem;
-        }
-
-        .events__note-title {
-            font-family: var(--font-display);
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--green);
-            margin-bottom: 0.75rem;
-        }
-
-        .events__note-text {
-            font-size: 0.875rem;
-            color: var(--mid);
-            line-height: 1.7;
-            margin-bottom: 1.25rem;
-        }
-
-        /* ── TEAM ── */
-        .team {
-            background: var(--cream);
-        }
-
-        .team__grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1.25rem;
-            margin-top: 3rem;
-        }
-
-        .team-card {
-            background: #fff;
-            border-radius: var(--radius);
-            padding: 1.5rem;
-            text-align: center;
-            border: 1px solid rgba(45,106,79,0.08);
-            transition: transform 0.2s;
-        }
-
-        .team-card:hover { transform: translateY(-3px); }
-
-        .team-card--founder {
-            background: var(--green);
-            color: #fff;
-            border: none;
-        }
-
-        .team-card__avatar {
-            width: 56px; height: 56px;
-            border-radius: 50%;
-            background: var(--green-pale);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: var(--font-display);
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--green);
-            margin: 0 auto 1rem;
-        }
-
-        .team-card--founder .team-card__avatar {
-            background: rgba(255,255,255,0.2);
-            color: #fff;
-        }
-
-        .team-card__name {
-            font-weight: 600;
-            font-size: 0.9rem;
-            color: var(--charcoal);
-            margin-bottom: 0.2rem;
-        }
-
-        .team-card--founder .team-card__name { color: #fff; }
-
-        .team-card__role {
-            font-size: 0.72rem;
-            color: var(--muted);
-            font-weight: 500;
-            margin-bottom: 0.5rem;
-            line-height: 1.4;
-        }
-
-        .team-card--founder .team-card__role { color: rgba(255,255,255,0.7); }
-
-        .team-card__email {
-            font-size: 0.7rem;
-            color: var(--green-mid);
-            word-break: break-all;
-        }
-
-        .team-card--founder .team-card__email { color: var(--green-light); }
-
-        /* ── CTA ── */
-        .cta {
-            background: var(--charcoal);
-            padding: 96px 0;
-            text-align: center;
-        }
-
-        .cta__eyebrow {
-            font-size: 0.72rem;
-            font-weight: 600;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--green-light);
-            margin-bottom: 1rem;
-        }
-
-        .cta__title {
-            font-family: var(--font-display);
-            font-size: clamp(2rem, 4vw, 3.2rem);
-            font-weight: 900;
-            color: #fff;
-            margin-bottom: 1.25rem;
-            line-height: 1.1;
-        }
-
-        .cta__text {
-            font-size: 1rem;
-            color: rgba(255,255,255,0.65);
-            max-width: 520px;
-            margin: 0 auto 2.5rem;
-            line-height: 1.7;
-        }
-
-        .cta__actions {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn--light {
-            background: #fff;
-            color: var(--green);
-        }
-
-        .btn--light:hover {
-            background: var(--green-pale);
-        }
-
-        .btn--ghost {
-            background: transparent;
-            color: #fff;
-            border: 2px solid rgba(255,255,255,0.3);
-        }
-
-        .btn--ghost:hover {
-            border-color: rgba(255,255,255,0.7);
-        }
-
-        /* ── CONTACT ── */
-        .contact {
-            background: var(--green);
-            padding: 48px 0;
-        }
-
-        .contact__inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-        }
-
-        .contact__left p {
-            font-size: 0.9rem;
-            color: rgba(255,255,255,0.8);
-            line-height: 1.8;
-        }
-
-        .contact__left a {
-            color: var(--green-pale);
-        }
-
-        .contact__left a:hover {
-            text-decoration: underline;
-        }
-
-        .contact__socials {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .social-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(255,255,255,0.15);
-            color: #fff;
-            padding: 0.6rem 1.2rem;
-            border-radius: 100px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            transition: background 0.2s;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-
-        .social-pill:hover {
-            background: rgba(255,255,255,0.25);
-        }
-
-        /* ── FOOTER ── */
-        .site-footer {
-            background: #111;
-            padding: 28px 0;
-        }
-
-        .footer-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .footer-copy {
-            font-size: 0.8rem;
-            color: rgba(255,255,255,0.4);
-        }
-
-        .footer-disclaimer {
-            font-size: 0.7rem;
-            color: rgba(255,255,255,0.25);
-            max-width: 640px;
-            line-height: 1.6;
-            text-align: right;
-        }
-
-        /* ── RESPONSIVE ── */
-        @media (max-width: 900px) {
-            .hero__inner,
-            .mission__inner,
-            .events__grid { grid-template-columns: 1fr; }
-
-            .pillars__grid { grid-template-columns: 1fr; }
-
-            .projects__grid { grid-template-columns: 1fr; }
-
-            .project-card--featured { grid-column: span 1; grid-template-columns: 1fr; }
-
-            .team__grid { grid-template-columns: repeat(2, 1fr); }
-
-            .hero__visual { display: none; }
-
-            .footer-disclaimer { text-align: left; }
-        }
-
-        @media (max-width: 600px) {
-            .site-nav { display: none; }
-            .nav-toggle { display: block; }
-            .team__grid { grid-template-columns: 1fr 1fr; }
-            section { padding: 64px 0; }
-        }
-
-        /* ── ANIMATIONS ── */
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(24px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-
-        .hero__eyebrow { animation: fadeUp 0.5s ease both; }
-        .hero__title   { animation: fadeUp 0.5s 0.1s ease both; }
-        .hero__subtitle{ animation: fadeUp 0.5s 0.2s ease both; }
-        .hero__actions { animation: fadeUp 0.5s 0.3s ease both; }
-        .hero__visual  { animation: fadeUp 0.6s 0.35s ease both; }
-    </style>
 </head>
 
 <body>
@@ -927,460 +17,139 @@
 <!-- ── HEADER ── -->
 <header class="site-header">
     <div class="container header-inner">
-        <a class="brand" href="/" aria-label="Home">
-            <img src="assets/brand/forgood-logo.png" alt="The For Good Project logo" style="height:48px; width:48px; object-fit:contain; border-radius:50%;" />
+        <a class="brand" href="/">
+            <img src="assets/brand/forgood-logo.png" alt="For Good logo" style="height:48px;width:48px;border-radius:50%;object-fit:contain;" />
             <div class="brand-meta">
                 <div class="brand-name">The For Good Project</div>
                 <div class="brand-tagline">at the University of Virginia</div>
             </div>
         </a>
 
-        <button class="nav-toggle" aria-label="Open menu">☰</button>
-
-        <nav class="site-nav" aria-label="Primary navigation">
-            <a class="nav-link" href="#mission">Mission</a>
-            <a class="nav-link" href="#projects">Projects</a>
-            <a class="nav-link" href="#events">Events</a>
-            <a class="nav-link" href="#team">Team</a>
-            <a class="nav-link nav-link--cta" href="#contact">Get Involved</a>
+        <nav class="site-nav">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/projects/">Projects</a>
+            <a class="nav-link" href="/events/">Events</a>
+            <a class="nav-link" href="/team/">Team</a>
+            <a class="nav-link" href="/about/">Mission</a>
+            <a class="nav-link nav-link--cta" href="/team/#contact">Get Involved</a>
         </nav>
     </div>
 </header>
 
-<!-- ── HERO ── -->
 <main>
+
+<!-- ── HERO ── -->
 <section class="hero">
     <div class="container">
         <div class="hero__inner">
-            <div class="hero__content">
+            <div>
                 <span class="hero__eyebrow">Student-Led · Charlottesville, VA</span>
+
                 <h1 class="hero__title">
                     Doing <span class="accent">good</span><br>
                     in our own<br>
                     <span class="accent-warm">backyard.</span>
                 </h1>
+
                 <p class="hero__subtitle">
-                    The For Good Project at UVA is dedicated to driving positive change in the Charlottesville community through hands-on service, youth education, and strong local partnerships.
+                    The For Good Project at UVA builds hands-on service initiatives that support Charlottesville through food drives, youth education, and community partnerships.
                 </p>
+
                 <div class="hero__actions">
-                    <a class="btn btn--primary" href="#projects">See Our Work</a>
-                    <a class="btn btn--outline" href="#contact">Get Involved</a>
+                    <a class="btn btn--primary" href="/projects/">Explore Projects</a>
+                    <a class="btn btn--outline" href="/team/">Meet the Team</a>
                 </div>
             </div>
 
-            <div class="hero__visual" aria-hidden="true">
-                <div class="hero-card hero-card--back"></div>
-                <div class="hero-card hero-card--main">
-                    <span class="hero-tag">Impact So Far</span>
-                    <div class="hero-stat">
-                        <span class="hero-stat__num">200+</span>
-                        <span class="hero-stat__label">lbs of food donated to BRAFB</span>
-                    </div>
-                    <div class="hero-divider"></div>
-                    <div class="hero-stat">
-                        <span class="hero-stat__num">$400+</span>
-                        <span class="hero-stat__label">raised in a single bake sale</span>
-                    </div>
-                    <div class="hero-divider"></div>
-                    <div class="hero-stat">
-                        <span class="hero-stat__num">25</span>
-                        <span class="hero-stat__label">meals passed out each month</span>
-                    </div>
-                </div>
-            </div>
+            <div class="hero__visual" aria-hidden="true"></div>
         </div>
     </div>
 </section>
 
-<!-- ── MISSION ── -->
-<section class="mission" id="mission">
+<!-- ── QUICK OVERVIEW (replaces full sections) ── -->
+<section class="mission">
     <div class="container">
-        <div class="mission__inner">
-            <div>
-                <p class="section-eyebrow">Our Mission</p>
-                <h2 class="section-title">Driving change through hands-on, collaborative service.</h2>
-                <blockquote class="mission__quote">
-                    "We design and implement projects that make a tangible impact — addressing Charlottesville's most pressing and evolving needs."
-                </blockquote>
-            </div>
+        <p class="section-eyebrow">Our Mission</p>
+        <h2 class="section-title">Service, education, and community impact.</h2>
 
-            <div>
-                <p class="section-eyebrow">Who We Are</p>
-                <div class="mission__goals">
-                    <div class="goal-item">
-                        <div class="goal-item__icon">🤝</div>
-                        <div>
-                            <div class="goal-item__title">Hands-on &amp; collaborative</div>
-                            <div class="goal-item__text">Kind-hearted students working side by side through creative initiatives for community change.</div>
-                        </div>
-                    </div>
-                    <div class="goal-item">
-                        <div class="goal-item__icon">📚</div>
-                        <div>
-                            <div class="goal-item__title">Youth education</div>
-                            <div class="goal-item__text">We visit local elementary and middle schools to inspire the next generation of changemakers and teach kids how they can serve their community.</div>
-                        </div>
-                    </div>
-                    <div class="goal-item">
-                        <div class="goal-item__icon">🏘️</div>
-                        <div>
-                            <div class="goal-item__title">Local partnerships</div>
-                            <div class="goal-item__text">We build strong connections with Charlottesville businesses, organizations, and fellow UVA CIOs to multiply our impact.</div>
-                        </div>
-                    </div>
-                    <div class="goal-item">
-                        <div class="goal-item__icon">💚</div>
-                        <div>
-                            <div class="goal-item__title">Care &amp; compassion</div>
-                            <div class="goal-item__text">At our core, we're building a healthier, more compassionate Charlottesville — one project at a time.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <p class="section-body">
+            We work with local organizations in Charlottesville to run food drives, meal pass-outs, and youth education programs that create meaningful, hands-on impact.
+        </p>
+
+        <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+            <a class="btn btn--primary" href="/about/">Learn More About Us</a>
+            <a class="btn btn--outline" href="/events/">See Upcoming Events</a>
         </div>
     </div>
 </section>
 
-<!-- ── PILLARS ── -->
-<section class="pillars">
+<!-- ── FEATURED LINKS ── -->
+<section class="projects">
     <div class="container">
-        <p class="section-eyebrow">What We Do</p>
-        <h2 class="section-title">Three pillars of impact.</h2>
-
-        <div class="pillars__grid">
-            <article class="pillar-card">
-                <p class="pillar-card__num">01</p>
-                <h3 class="pillar-card__title">Service Projects</h3>
-                <p class="pillar-card__text">
-                    From meal pass-outs to food drives and bake sales, we run hands-on projects that directly benefit Charlottesville residents — including the unhoused community and the Blue Ridge Area Food Bank.
-                </p>
-            </article>
-
-            <article class="pillar-card">
-                <p class="pillar-card__num">02</p>
-                <h3 class="pillar-card__title">Youth Education</h3>
-                <p class="pillar-card__text">
-                    We go into local schools to teach kids about service and civic engagement — encouraging care, compassion, and the idea that anyone can make a difference in their community.
-                </p>
-            </article>
-
-            <article class="pillar-card">
-                <p class="pillar-card__num">03</p>
-                <h3 class="pillar-card__title">Community Partnerships</h3>
-                <p class="pillar-card__text">
-                    We collaborate with CIOs like Food Assist and events like Hug a Hoo, building lasting relationships that let us do more together than we ever could alone.
-                </p>
-            </article>
-        </div>
-    </div>
-</section>
-
-<!-- ── PROJECTS ── -->
-<section class="projects" id="projects">
-    <div class="container">
-        <div class="projects__header">
-            <div>
-                <p class="section-eyebrow">Projects</p>
-                <h2 class="section-title">Our work in action.</h2>
-            </div>
-            <a class="btn btn--outline" href="https://www.instagram.com/theforgoodproject" target="_blank" rel="noopener">View on Instagram ↗</a>
-        </div>
+        <p class="section-eyebrow">Explore</p>
+        <h2 class="section-title">What we do</h2>
 
         <div class="projects__grid">
-            <!-- Featured -->
-            <article class="project-card project-card--featured">
-                <div>
-                    <p class="project-card__eyebrow">Featured · Food Drive</p>
-                    <h3 class="project-card__title">BRAFB Food Drive with Food Assist</h3>
-                    <p class="project-card__text">
-                        In collaboration with Food Assist, we ran a week-long food drive delivering directly to the Blue Ridge Area Food Bank. We worked closely with BRAFB staff, established a lasting partnership, and collected over 200 lbs of food — all in one week. This is a partnership we're excited to continue growing.
-                    </p>
-                </div>
-                <div>
-                    <div class="project-card__stats">
-                        <div class="project-card__stat">
-                            <strong>200+</strong>
-                            <span>lbs of food collected</span>
-                        </div>
-                        <div class="project-card__stat">
-                            <strong>1 wk</strong>
-                            <span>collection window</span>
-                        </div>
-                    </div>
-                    <p class="project-card__text" style="margin-top:1.5rem; font-size:0.85rem;">
-                        Partner: <strong style="color:var(--green-light)">Food Assist CIO</strong><br>
-                        Beneficiary: <strong style="color:var(--green-light)">Blue Ridge Area Food Bank</strong>
-                    </p>
-                </div>
-            </article>
 
-            <!-- Bake Sale -->
-            <article class="project-card">
-                <p class="project-card__eyebrow">Fundraising</p>
-                <h3 class="project-card__title">Bake Sales for BRAFB</h3>
+            <a class="project-card" href="/projects/">
+                <h3 class="project-card__title">Projects</h3>
                 <p class="project-card__text">
-                    All proceeds from our bake sales are donated directly to the Blue Ridge Area Food Bank. In a single day, we raised over $400 — proof that small acts of generosity add up fast.
+                    Food drives, bake sales, and monthly meal pass-outs.
                 </p>
-                <div class="project-card__stats">
-                    <div class="project-card__stat">
-                        <strong>$400+</strong>
-                        <span>raised in one day</span>
-                    </div>
-                </div>
-            </article>
+            </a>
 
-            <!-- Meal Pass-outs -->
-            <article class="project-card">
-                <p class="project-card__eyebrow">Ongoing · Monthly</p>
-                <h3 class="project-card__title">Meal Pass-Outs</h3>
+            <a class="project-card" href="/events/">
+                <h3 class="project-card__title">Events</h3>
                 <p class="project-card__text">
-                    Once a month, a group of 6–8 volunteers assembles bagged meals from club donations and heads to the Charlottesville Downtown Mall to hand them out to unhoused community members. We show up with compassion, reduce stigma around homelessness, and make real human connections.
+                    GBMs, volunteer opportunities, and service events.
                 </p>
-                <div class="project-card__stats">
-                    <div class="project-card__stat">
-                        <strong>~25</strong>
-                        <span>meals per pass-out</span>
-                    </div>
-                    <div class="project-card__stat">
-                        <strong>Monthly</strong>
-                        <span>recurring service</span>
-                    </div>
-                </div>
-            </article>
+            </a>
 
-            <!-- Superbowl of Giving -->
-            <article class="project-card" style="grid-column: span 2;">
-                <p class="project-card__eyebrow">Competition · Cav Food Pantry</p>
-                <h3 class="project-card__title">Superbowl of Giving</h3>
+            <a class="project-card" href="/team/">
+                <h3 class="project-card__title">Team</h3>
                 <p class="project-card__text">
-                    Through the Cav Food Pantry's annual Superbowl of Giving drive, The For Good Project was among the highest contributing CIOs at UVA — demonstrating our members' commitment and the strength of our community.
+                    Meet the students running The For Good Project.
                 </p>
-            </article>
-        </div>
-    </div>
-</section>
+            </a>
 
-<!-- ── EVENTS ── -->
-<section class="events" id="events">
-    <div class="container">
-        <p class="section-eyebrow">Events</p>
-        <h2 class="section-title">Upcoming &amp; recent events.</h2>
-
-        <div class="events__grid">
-            <div class="events__list">
-                <div class="event-item">
-                    <div class="event-date">
-                        <span class="event-date__month">Mar</span>
-                        <span class="event-date__day">10</span>
-                    </div>
-                    <div class="event-info">
-                        <div class="event-info__title">General Body Meeting</div>
-                        <div class="event-info__time">7:30 PM</div>
-                    </div>
-                </div>
-                <div class="event-item">
-                    <div class="event-date">
-                        <span class="event-date__month">Mar</span>
-                        <span class="event-date__day">15–21</span>
-                    </div>
-                    <div class="event-info">
-                        <div class="event-info__title">Food Drive — Blue Ridge Area Food Bank</div>
-                        <div class="event-info__time">All week</div>
-                    </div>
-                </div>
-                <div class="event-item">
-                    <div class="event-date">
-                        <span class="event-date__month">Mar</span>
-                        <span class="event-date__day">24</span>
-                    </div>
-                    <div class="event-info">
-                        <div class="event-info__title">General Body Meeting</div>
-                        <div class="event-info__time">7:30 PM</div>
-                    </div>
-                </div>
-                <div class="event-item">
-                    <div class="event-date">
-                        <span class="event-date__month">Mar</span>
-                        <span class="event-date__day">27</span>
-                    </div>
-                    <div class="event-info">
-                        <div class="event-info__title">Meal Pass Out #2</div>
-                        <div class="event-info__time">3:00 – 4:30 PM</div>
-                    </div>
-                </div>
-                <div class="event-item">
-                    <div class="event-date">
-                        <span class="event-date__month">Apr</span>
-                        <span class="event-date__day">7</span>
-                    </div>
-                    <div class="event-info">
-                        <div class="event-info__title">General Body Meeting + Bake Sale #2</div>
-                        <div class="event-info__time">GBM 7:30 PM · Bake Sale 2–4 PM</div>
-                    </div>
-                </div>
-                <div class="event-item">
-                    <div class="event-date">
-                        <span class="event-date__month">Apr</span>
-                        <span class="event-date__day">17</span>
-                    </div>
-                    <div class="event-info">
-                        <div class="event-info__title">Meal Pass Out #3</div>
-                        <div class="event-info__time">3:30 – 5:00 PM</div>
-                    </div>
-                </div>
-                <div class="event-item">
-                    <div class="event-date">
-                        <span class="event-date__month">Apr</span>
-                        <span class="event-date__day">21</span>
-                    </div>
-                    <div class="event-info">
-                        <div class="event-info__title">General Body Meeting</div>
-                        <div class="event-info__time">7:30 PM</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="events__note">
-                <div class="events__note-title">Stay in the loop 📲</div>
-                <p class="events__note-text">
-                    This calendar is subject to change. For real-time updates on events, food drives, and volunteer opportunities, follow us on Instagram or join our GroupMe (linked in our Instagram bio).
+            <a class="project-card" href="/about/">
+                <h3 class="project-card__title">Mission</h3>
+                <p class="project-card__text">
+                    Why we exist and what drives our work.
                 </p>
-                <div style="display:flex; flex-direction:column; gap:0.75rem;">
-                    <a class="btn btn--primary" href="https://www.instagram.com/theforgoodproject" target="_blank" rel="noopener">
-                        Instagram @theforgoodproject
-                    </a>
-                    <p style="font-size:0.8rem; color:var(--muted);">GroupMe link available in our Instagram bio.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+            </a>
 
-<!-- ── TEAM ── -->
-<section class="team" id="team">
-    <div class="container">
-        <p class="section-eyebrow">Exec Board</p>
-        <h2 class="section-title">The people behind the work.</h2>
-
-        <div class="team__grid">
-            <!-- Founder -->
-            <div class="team-card team-card--founder">
-                <div class="team-card__avatar">SP</div>
-                <div class="team-card__name">Sophia Pop-Vicas</div>
-                <div class="team-card__role">Founder &amp; President<br>2nd Year · Government &amp; Spanish</div>
-                <div class="team-card__email">bdm5ba@virginia.edu</div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-card__avatar">MB</div>
-                <div class="team-card__name">Macy Bush</div>
-                <div class="team-card__role">Co-VP Community Outreach<br>2nd Year · Kinesiology</div>
-                <div class="team-card__email">uap6uk@virginia.edu</div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-card__avatar">EW</div>
-                <div class="team-card__name">Elliot Walters</div>
-                <div class="team-card__role">Co-VP Community Outreach<br>2nd Year · Batten School</div>
-                <div class="team-card__email">hhg8rb@virginia.edu</div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-card__avatar">BP</div>
-                <div class="team-card__name">Brent Porter</div>
-                <div class="team-card__role">VP Finance<br>1st Year</div>
-                <div class="team-card__email">&nbsp;</div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-card__avatar">AL</div>
-                <div class="team-card__name">Abby Lee</div>
-                <div class="team-card__role">VP Administration<br>2nd Year · Neuroscience &amp; Dance</div>
-                <div class="team-card__email">fxx6wy@virginia.edu</div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-card__avatar">KR</div>
-                <div class="team-card__name">Kailey Ross</div>
-                <div class="team-card__role">Co-VP Marketing<br>2nd Year · Biology (Pre-Med)</div>
-                <div class="team-card__email">any2tk@virginia.edu</div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-card__avatar">AH</div>
-                <div class="team-card__name">Ava Higgins</div>
-                <div class="team-card__role">Co-VP Marketing<br>2nd Year · Media Studies &amp; Spanish</div>
-                <div class="team-card__email">ebzus@virginia.edu</div>
-            </div>
         </div>
     </div>
 </section>
 
 <!-- ── CTA ── -->
-<section class="cta" id="join">
+<section class="cta">
     <div class="container">
-        <p class="cta__eyebrow">Get Involved</p>
-        <h2 class="cta__title">Ready to do good?</h2>
+        <h2 class="cta__title">Ready to get involved?</h2>
         <p class="cta__text">
-            Whether you want to volunteer at a meal pass-out, help run a food drive, teach kids in local schools, or just show up and help — there's a place for you in The For Good Project.
+            Join us in creating impact across Charlottesville through service and community engagement.
         </p>
+
         <div class="cta__actions">
-            <a class="btn btn--light" href="https://www.instagram.com/theforgoodproject" target="_blank" rel="noopener">Follow on Instagram</a>
-            <a class="btn btn--ghost" href="#contact">Contact Us</a>
+            <a class="btn btn--light" href="https://www.instagram.com/theforgoodproject" target="_blank">Instagram</a>
+            <a class="btn btn--ghost" href="mailto:bdm5ba@virginia.edu">Contact Us</a>
         </div>
     </div>
 </section>
 
-<!-- ── CONTACT ── -->
-<section class="contact" id="contact">
-    <div class="container contact__inner">
-        <div class="contact__left">
-            <p><a href="mailto:bdm5ba@virginia.edu">bdm5ba@virginia.edu</a></p>
-            <p>Charlottesville, VA 22904</p>
-            <p style="margin-top:0.5rem; font-size:0.8rem;">For donation info and real-time updates, check our Instagram or GroupMe.</p>
-        </div>
-        <div class="contact__socials">
-            <a class="social-pill" href="https://www.instagram.com/theforgoodproject" target="_blank" rel="noopener">
-                📸 @theforgoodproject
-            </a>
-            <a class="social-pill" href="https://www.instagram.com/theforgoodproject" target="_blank" rel="noopener">
-                💬 GroupMe (via Instagram bio)
-            </a>
-        </div>
-    </div>
-</section>
+</main>
 
 <!-- ── FOOTER ── -->
 <footer class="site-footer">
     <div class="container footer-inner">
         <span class="footer-copy">© <span id="year"></span> The For Good Project at UVA</span>
-        <p class="footer-disclaimer">
-            Although this organization has members who are University of Virginia students and may have University employees associated or engaged in its activities and affairs, the organization is not a part of or an agency of the University. It is a separate and independent organization which is responsible for and manages its own activities and affairs.
-        </p>
     </div>
 </footer>
-</main>
 
 <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Mobile nav toggle
-    const toggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.site-nav');
-    if (toggle && nav) {
-        toggle.addEventListener('click', () => {
-            const open = nav.style.display === 'flex';
-            nav.style.display = open ? 'none' : 'flex';
-            nav.style.flexDirection = 'column';
-            nav.style.position = 'absolute';
-            nav.style.top = '68px';
-            nav.style.left = '0';
-            nav.style.right = '0';
-            nav.style.background = 'var(--cream)';
-            nav.style.padding = '1rem 2rem';
-            nav.style.borderBottom = '1px solid rgba(45,106,79,0.12)';
-        });
-    }
 </script>
+
 </body>
 </html>

@@ -14,25 +14,32 @@
 
 <body>
 
-<!-- ✅ UPDATED HEADER (your version) -->
+<!-- ── HEADER ── -->
 <header class="site-header">
     <div class="container header-inner">
         <a class="brand" href="/">
-            <img class="brand-mark" src="/assets/brand/logo.png" alt="For Good logo" />
-            <div class="brand-meta brand-meta--inline">
-                <div class="brand-name">For Good</div>
-                <div class="brand-tagline brand-tagline--inline">
-                    Building projects for social impact
-                </div>
+            <img src="/assets/brand/forgood-logo.png"
+                 alt="For Good logo"
+                 style="height:48px;width:48px;border-radius:50%;object-fit:contain;" />
+
+            <div class="brand-meta">
+                <div class="brand-name">The For Good Project</div>
+                <div class="brand-tagline">at the University of Virginia</div>
             </div>
         </a>
 
-        <nav class="site-nav">
+        <button class="nav-toggle" aria-label="Open menu">☰</button>
+
+        <nav class="site-nav" aria-label="Primary navigation">
             <a class="nav-link" href="/">Home</a>
-            <a class="nav-link" href="/about/">Mission</a>
             <a class="nav-link" href="/projects/">Projects</a>
             <a class="nav-link" href="/events/">Events</a>
+            <a class="nav-link" href="/about/">Mission</a>
             <a class="nav-link" href="/team/">Team</a>
+
+            <a class="nav-link nav-link--cta" href="/team/#contact">
+                Get Involved
+            </a>
         </nav>
     </div>
 </header>

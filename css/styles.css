@@ -586,4 +586,37 @@ section + section {
     margin-bottom: 0;
 }
 
+/* ───────── PROJECT SPLIT LAYOUT ───────── */
+
+.project-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+/* reverse layout for alternating sections */
+.project-row.reverse {
+    direction: rtl;
+}
+
+.project-row.reverse > * {
+    direction: ltr;
+}
+
+/* make cards and media consistent */
+.project-row .card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.project-row h3 {
+    font-family: var(--font-display);
+    color: var(--green);
+    margin-bottom: 0.75rem;
+}
+
 

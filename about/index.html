@@ -5,239 +5,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>About | The For Good Project at UVA</title>
+
     <meta name="description"
           content="Learn about The For Good Project at UVA — a student-led organization focused on hands-on service, youth education, and community impact in Charlottesville." />
+
     <link rel="canonical" href="https://forgoodprojectuva.github.io/about/" />
     <meta property="og:site_name" content="The For Good Project at UVA" />
 
-    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="/style.css" />
+
     <link rel="icon" type="image/png" href="/assets/brand/forgood-logo.png" />
 </head>
 
 <body>
 
-<!-- ── HEADER ── -->
+<!-- ───────────────── HEADER ───────────────── -->
 <header class="site-header">
     <div class="container header-inner">
+
         <a class="brand" href="/">
             <img src="/assets/brand/forgood-logo.png"
                  alt="For Good Project logo"
                  style="height:48px;width:48px;border-radius:50%;object-fit:contain;" />
-            <div class="brand-meta">
+
+            <div>
                 <div class="brand-name">The For Good Project</div>
                 <div class="brand-tagline">at the University of Virginia</div>
             </div>
         </a>
 
-        <button class="nav-toggle" aria-label="Open menu">☰</button>
-
-        <nav class="site-nav" aria-label="Primary navigation">
+        <nav class="site-nav">
             <a class="nav-link" href="/">Home</a>
             <a class="nav-link" href="/projects/">Projects</a>
             <a class="nav-link" href="/events/">Events</a>
             <a class="nav-link" href="/about/officers/">Officers</a>
-            <a class="nav-link" href="/about/">Mission</a>
-            
-            <a class="nav-link nav-link--cta" href="/officers/#contact">Get Involved</a>
+            <a class="nav-link nav-link--cta" href="#get-involved">Get Involved</a>
         </nav>
+
     </div>
 </header>
 
-<main class="aboutpage">
+<main>
 
-    <!-- HERO -->
-    <section class="aboutpage-hero">
-        <div class="aboutpage-container">
-            <p class="aboutpage-hero__eyebrow">About The For Good Project</p>
-            <h1 class="aboutpage-hero__title">Doing good in our own backyard.</h1>
-            <p class="aboutpage-hero__text">
-                The For Good Project at UVA is a student-led organization dedicated to driving positive change
-                in the Charlottesville community through hands-on service, youth education, and strong local partnerships.
+<!-- ───────────────── HERO ───────────────── -->
+<section class="hero">
+    <div class="container hero__inner">
+
+        <div>
+            <div class="hero__eyebrow">About Us</div>
+
+            <h1 class="hero__title">
+                Doing good in our <span class="accent">own backyard.</span>
+            </h1>
+
+            <p class="hero__subtitle">
+                The For Good Project at UVA is a student-led organization focused on hands-on service,
+                youth education, and building meaningful impact in the Charlottesville community.
             </p>
 
-            <div class="aboutpage-hero__actions">
-                <a class="aboutpage-hero__button aboutpage-hero__button--accent" href="/projects/">See Our Work</a>
-                <a class="aboutpage-hero__button aboutpage-hero__button--outline" href="/about/officers/">Meet the Team</a>
+            <div class="hero__actions">
+                <a class="btn btn--primary" href="/projects/">See Our Work</a>
+                <a class="btn btn--outline" href="/about/officers/">Meet the Team</a>
             </div>
         </div>
-    </section>
 
-    <!-- WHO WE ARE -->
-    <section class="aboutpage-section aboutpage-section--light">
-        <div class="aboutpage-container">
-            <div class="aboutpage-section__heading">
-                <p class="aboutpage-section__label">Who We Are</p>
-                <h2 class="aboutpage-section__title">
-                    Hands-on, collaborative, and community-driven.
-                </h2>
-            </div>
-
-            <div class="aboutpage-who">
-                <div class="aboutpage-who__text">
-                    <p>
-                        The For Good Project is a group of students passionate about making a tangible difference
-                        in the Charlottesville community. We focus on direct service — from food drives to meal
-                        pass-outs — while building meaningful relationships with local organizations and people.
-                    </p>
-                    <p>
-                        Our goal is simple: create consistent, compassionate impact through projects that respond
-                        to real community needs.
-                    </p>
-                </div>
-
-                <div class="aboutpage-who__stats">
-                    <div class="aboutpage-mini-card">
-                        <h3 class="aboutpage-mini-card__title">Hands-on</h3>
-                        <p class="aboutpage-mini-card__text">
-                            We prioritize direct action — organizing drives, distributing meals, and showing up.
-                        </p>
-                    </div>
-
-                    <div class="aboutpage-mini-card">
-                        <h3 class="aboutpage-mini-card__title">Collaborative</h3>
-                        <p class="aboutpage-mini-card__text">
-                            We partner with local organizations and other UVA groups to expand our impact.
-                        </p>
-                    </div>
-
-                    <div class="aboutpage-mini-card">
-                        <h3 class="aboutpage-mini-card__title">Community-focused</h3>
-                        <p class="aboutpage-mini-card__text">
-                            Everything we do is centered on Charlottesville’s needs.
-                        </p>
-                    </div>
-
-                    <div class="aboutpage-mini-card">
-                        <h3 class="aboutpage-mini-card__title">Impact-driven</h3>
-                        <p class="aboutpage-mini-card__text">
-                            We focus on tangible results, not just ideas.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHAT WE DO -->
-    <section class="aboutpage-section aboutpage-section--tint">
-        <div class="aboutpage-container">
-            <div class="aboutpage-section__heading aboutpage-section__heading--center">
-                <p class="aboutpage-section__label">What We Do</p>
-                <h2 class="aboutpage-section__title">Three pillars of impact.</h2>
-            </div>
-
-            <div class="aboutpage-cards">
-
-                <article class="aboutpage-card">
-                    <h3 class="aboutpage-card__title">Service Projects</h3>
-                    <p class="aboutpage-card__text">
-                        From food drives to meal pass-outs and fundraising events, we run hands-on initiatives
-                        that directly support the Charlottesville community.
-                    </p>
-                    <a class="aboutpage-card__link" href="/projects/">View Projects</a>
-                </article>
-
-                <article class="aboutpage-card">
-                    <h3 class="aboutpage-card__title">Youth Education</h3>
-                    <p class="aboutpage-card__text">
-                        We visit local schools to teach students about service, compassion, and how they can make a difference.
-                    </p>
-                    <a class="aboutpage-card__link" href="/events/">See Events</a>
-                </article>
-
-                <article class="aboutpage-card">
-                    <h3 class="aboutpage-card__title">Community Partnerships</h3>
-                    <p class="aboutpage-card__text">
-                        We collaborate with local organizations, businesses, and UVA groups to expand our reach and impact.
-                    </p>
-                    <a class="aboutpage-card__link" href="/projects/">Our Work</a>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- IMPACT -->
-    <section class="aboutpage-section aboutpage-section--light">
-        <div class="aboutpage-container">
-            <p class="aboutpage-section__label">Our Impact</p>
-            <h2 class="aboutpage-section__title">What we've done so far.</h2>
-
-            <p>
-                From donating over 200 lbs of food to the Blue Ridge Area Food Bank to raising $400+ in a single
-                bake sale and distributing meals monthly, our work is rooted in consistent, meaningful action.
-            </p>
-        </div>
-    </section>
-
-    <!-- TEAM CTA -->
-    <section class="aboutpage-section aboutpage-section--light">
-        <div class="aboutpage-container">
-            <div class="aboutpage-team">
-                <div class="aboutpage-team__content">
-                    <p class="aboutpage-section__label">Meet the Team</p>
-                    <h2 class="aboutpage-section__title">The people behind the work.</h2>
-                    <p class="aboutpage-team__text">
-                        Meet the students leading projects, organizing events, and driving impact in the Charlottesville community.
-                    </p>
-                </div>
-
-                <div class="aboutpage-team__action">
-                    <a class="aboutpage-team__button" href="/about/officers/">Go to Team Page</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- GET INVOLVED -->
-    <section class="aboutpage-section aboutpage-section--accent" id="get-involved">
-        <div class="aboutpage-container">
-            <div class="aboutpage-involved">
-                <p class="aboutpage-section__label aboutpage-section__label--light">Get Involved</p>
-                <h2 class="aboutpage-section__title aboutpage-section__title--light">
-                    Ready to do good?
-                </h2>
-                <p class="aboutpage-involved__text">
-                    Whether you want to volunteer, help run a project, or just show up — there’s a place for you here.
-                </p>
-
-                <div class="aboutpage-involved__actions">
-                    <a class="aboutpage-involved__button aboutpage-involved__button--outline"
-                       href="https://www.instagram.com/theforgoodproject" target="_blank">
-                        Instagram
-                    </a>
-
-                    <a class="aboutpage-involved__button aboutpage-involved__button--outline"
-                       href="mailto:bdm5ba@virginia.edu">
-                        Contact
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</main>
-
-<!-- CONTACT BAR -->
-<section class="contact-section" id="contact">
-    <div class="contact-strip">
-        <div class="contact-strip-left">
-            <p class="contact-line">
-                <a class="contact-link" href="mailto:bdm5ba@virginia.edu">bdm5ba@virginia.edu</a>
-            </p>
-            <p class="contact-line">Charlottesville, VA, 22904</p>
-        </div>
-
-        <div class="contact-strip-right">
-            <a class="social-icon"
-               href="https://www.instagram.com/theforgoodproject"
-               target="_blank">
-                <img src="/assets/icons/instagram-icon.png" alt="" />
-            </a>
-        </div>
     </div>
 </section>
 
+<!-- ───────────────── WHO WE ARE ───────────────── -->
+<section class="mission">
+    <div class="container mission__inner">
+
+        <div>
+            <p class="section-eyebrow">Who We Are</p>
+
+            <h2 class="section-title">
+                Hands-on, collaborative, and community-driven.
+            </h2>
+
+            <p class="section-body">
+                The For Good Project is a group of UVA students committed to making tangible impact in Charlottesville.
+                We focus on direct service — from food distribution to youth outreach — while building strong relationships
+                with local organizations.
+            </p>
+
+            <div class="mission__quote">
+                We believe impact comes from showing up consistently and working directly with the community.
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ───────────────── WHAT WE DO ───────────────── -->
+<section class="projects">
+    <div class="container">
+
+        <p class="section-eyebrow">What We Do</p>
+        <h2 class="section-title">Three pillars of impact.</h2>
+
+        <div class="projects__grid">
+
+            <div class="project-card">
+                <h3 class="project-card__title">Service Projects</h3>
+                <p class="project-card__text">
+                    Food drives, meal pass-outs, and hands-on service events that directly support the Charlottesville community.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-card__title">Youth Education</h3>
+                <p class="project-card__text">
+                    We visit schools and youth programs to teach service, leadership, and community engagement.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-card__title">Community Partnerships</h3>
+                <p class="project-card__text">
+                    We collaborate with local organizations and UVA groups to expand reach and long-term impact.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ───────────────── IMPACT ───────────────── -->
+<section class="mission">
+    <div class="container">
+
+        <p class="section-eyebrow">Our Impact</p>
+        <h2 class="section-title">What we've done so far.</h2>
+
+        <p class="section-body">
+            From donating over 200 lbs of food to the Blue Ridge Area Food Bank, to running monthly meal distributions
+            and raising funds through student-led events, our work is focused on consistent, measurable impact.
+        </p>
+
+    </div>
+</section>
+
+<!-- ───────────────── TEAM CTA ───────────────── -->
+<section class="cta">
+    <div class="container">
+
+        <div class="cta__eyebrow">Meet the Team</div>
+
+        <h2 class="cta__title">
+            The people behind the impact.
+        </h2>
+
+        <p class="cta__text">
+            Meet the students leading projects, organizing events, and driving change in Charlottesville.
+        </p>
+
+        <div class="cta__actions">
+            <a class="btn btn--light" href="/about/officers/">Go to Team Page</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ───────────────── GET INVOLVED ───────────────── -->
+<section class="cta" id="get-involved">
+    <div class="container">
+
+        <div class="cta__eyebrow">Get Involved</div>
+
+        <h2 class="cta__title">Ready to do good?</h2>
+
+        <p class="cta__text">
+            Whether you want to volunteer, lead projects, or just show up — there’s a place for you here.
+        </p>
+
+        <div class="cta__actions">
+            <a class="btn btn--light"
+               href="https://www.instagram.com/theforgoodproject"
+               target="_blank">
+                Instagram
+            </a>
+
+            <a class="btn btn--ghost"
+               href="mailto:bdm5ba@virginia.edu">
+                Contact
+            </a>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<!-- ───────────────── FOOTER ───────────────── -->
 <footer class="site-footer">
     <div class="container footer-inner">
         <span class="footer-copy">© <span id="year"></span> The For Good Project</span>
@@ -252,6 +217,5 @@
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
-<script src="/js/nav.js"></script>
 </body>
 </html>

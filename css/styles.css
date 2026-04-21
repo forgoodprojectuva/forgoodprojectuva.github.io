@@ -448,3 +448,34 @@ section + section {
     color: var(--mid);
     line-height: 1.6;
 }
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.event-card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    border: 1px solid rgba(45,106,79,0.12);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+}
+
+.event-card h3 {
+    font-family: var(--font-display);
+    color: var(--green);
+    margin-bottom: 0.5rem;
+}
+
+.event-card p {
+    color: var(--mid);
+}

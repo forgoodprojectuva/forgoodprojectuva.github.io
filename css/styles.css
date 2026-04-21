@@ -576,4 +576,14 @@ section + section {
     }
 }
 
+.card p {
+    margin-bottom: 1.25rem;
+    line-height: 1.8;
+    color: var(--mid);
+}
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
 

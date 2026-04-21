@@ -619,4 +619,12 @@ section + section {
     margin-bottom: 0.75rem;
 }
 
+.project-image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
 

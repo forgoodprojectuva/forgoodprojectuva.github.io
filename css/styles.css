@@ -368,3 +368,45 @@ section + section {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* ─────────────────────────────
+   MEDIA / IMAGE PLACEHOLDERS
+──────────────────────────── */
+
+.media {
+    width: 100%;
+    height: 240px;
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, var(--green-pale), var(--warm-white));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    border: 1px dashed rgba(0,0,0,0.08);
+}
+
+/* project layout with image */
+.project-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.project-row.reverse {
+    direction: rtl;
+}
+.project-row.reverse > * {
+    direction: ltr;
+}
+
+/* team image placeholder */
+.avatar {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--green-pale), var(--warm-white));
+    margin-bottom: 1rem;
+}

@@ -479,3 +479,44 @@ section + section {
 .event-card p {
     color: var(--mid);
 }
+
+.event-timeline {
+    margin-top: 2rem;
+    border-left: 2px solid var(--green-pale);
+    padding-left: 1.5rem;
+}
+
+.event-month {
+    font-family: var(--font-display);
+    color: var(--green);
+    margin: 2rem 0 1rem;
+}
+
+.event-item {
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+
+.event-item::before {
+    content: "";
+    position: absolute;
+    left: -1.6rem;
+    top: 0.4rem;
+    width: 10px;
+    height: 10px;
+    background: var(--green);
+    border-radius: 50%;
+}
+
+.event-date {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 0.2rem;
+}
+
+.event-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--charcoal);
+}

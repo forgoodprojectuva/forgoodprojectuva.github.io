@@ -416,3 +416,35 @@ section + section {
     margin-bottom: 0.5rem;
     color: var(--mid);
 }
+
+.pillars__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.pillar-card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 2rem;
+    border: 1px solid rgba(45,106,79,0.12);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pillar-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.pillar-card h3 {
+    font-family: var(--font-display);
+    color: var(--green);
+    margin-bottom: 0.75rem;
+}
+
+.pillar-card p {
+    color: var(--mid);
+    line-height: 1.6;
+}

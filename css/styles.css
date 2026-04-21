@@ -520,3 +520,58 @@ section + section {
     font-weight: 600;
     color: var(--charcoal);
 }
+
+/* ───────── EVENTS GRID ───────── */
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+
+/* Month headers span full width */
+.event-month {
+    grid-column: 1 / -1;
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--green);
+    margin: 1.5rem 0 0.5rem;
+}
+
+/* Event cards */
+.event-card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    border: 1px solid rgba(45,106,79,0.12);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+/* BOLD DATE + TIME (your request) */
+.event-date {
+    font-weight: 700;
+    color: var(--green-mid);
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+/* Title styling */
+.event-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--charcoal);
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+}

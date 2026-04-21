@@ -1,51 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Events</title>
+
+<link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="container header-inner">
+<a class="brand" href="/">
+<img src="/assets/brand/forgood-logo.png" style="height:48px;border-radius:50%;" />
+<div>
+<div class="brand-name">The For Good Project</div>
+<div class="brand-tagline">at UVA</div>
+</div>
+</a>
+
+<nav class="site-nav">
+<a class="nav-link" href="/">Home</a>
+<a class="nav-link" href="/projects/">Projects</a>
+<a class="nav-link nav-link--active" href="/events/">Events</a>
+<a class="nav-link" href="/about/officers/">Officers</a>
+<a class="nav-link" href="/about/">Mission</a>
+</nav>
+</div>
+</header>
+
 <main>
 
 <section class="hero">
-    <div class="container hero__inner">
-        <div>
-            <span class="hero__eyebrow">Events</span>
-
-            <h1 class="hero__title">
-                What we’ve been <span class="accent">doing</span>
-            </h1>
-
-            <p class="hero__subtitle">
-                From service events to outreach initiatives, here’s how we engage with the Charlottesville community.
-            </p>
-        </div>
-    </div>
+<div class="container hero__inner">
+<div>
+<span class="hero__eyebrow">Events</span>
+<h1 class="hero__title">What we do</h1>
+<p class="hero__subtitle">Service and outreach in action.</p>
+</div>
+</div>
 </section>
 
 <section class="projects">
-    <div class="container">
-        <p class="section-eyebrow">Recent Events</p>
-        <h2 class="section-title">How we show up</h2>
+<div class="container">
 
-        <div class="projects__grid">
+<div class="projects__grid">
+<div class="project-card"><h3>Food Drives</h3></div>
+<div class="project-card"><h3>School Visits</h3></div>
+<div class="project-card"><h3>Fundraisers</h3></div>
+</div>
 
-            <div class="project-card">
-                <h3 class="project-card__title">Food Drives</h3>
-                <p class="project-card__text">
-                    Organizing donations and distributing food to local families.
-                </p>
-            </div>
-
-            <div class="project-card">
-                <h3 class="project-card__title">School Visits</h3>
-                <p class="project-card__text">
-                    Teaching students about service and community impact.
-                </p>
-            </div>
-
-            <div class="project-card">
-                <h3 class="project-card__title">Fundraising Events</h3>
-                <p class="project-card__text">
-                    Raising money for local organizations through student-led initiatives.
-                </p>
-            </div>
-
-        </div>
-    </div>
+</div>
 </section>
 
 </main>
+
+<footer class="site-footer">
+<div class="container footer-inner">
+© <span id="year"></span> The For Good Project
+</div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

@@ -13,10 +13,10 @@
 ──────────────────────────── */
 
 :root {
-    --green: #2d6a4f;
-    --green-mid: #40916c;
-    --green-light: #74c69d;
-    --green-pale: #d8f3dc;
+    --green: #556EF5;
+    --green-mid: #7088F7;
+    --green-light: #99AEFB;
+    --green-pale: #E4E8FE;
 
     --cream: #faf9f6;
     --warm-white: #f5f0e8;
@@ -428,7 +428,7 @@ section + section {
     background: white;
     border-radius: var(--radius);
     padding: 2rem;
-    border: 1px solid rgba(45,106,79,0.12);
+    border: 1px solid rgba(85,110,245,0.12);
     box-shadow: 0 8px 24px rgba(0,0,0,0.04);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -460,7 +460,7 @@ section + section {
     background: white;
     border-radius: var(--radius);
     padding: 1.5rem;
-    border: 1px solid rgba(45,106,79,0.12);
+    border: 1px solid rgba(85,110,245,0.12);
     box-shadow: 0 6px 18px rgba(0,0,0,0.04);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -544,7 +544,7 @@ section + section {
     background: white;
     border-radius: var(--radius);
     padding: 1.25rem 1.5rem;
-    border: 1px solid rgba(45,106,79,0.12);
+    border: 1px solid rgba(85,110,245,0.12);
     box-shadow: 0 6px 18px rgba(0,0,0,0.04);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -554,7 +554,7 @@ section + section {
     box-shadow: 0 12px 28px rgba(0,0,0,0.08);
 }
 
-/* BOLD DATE + TIME (your request) */
+/* BOLD DATE + TIME */
 .event-date {
     font-weight: 700;
     color: var(--green-mid);
